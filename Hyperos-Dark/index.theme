@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Hyperos-Dark
+Comment=A xiomi hyper os ui  like Gtk+ theme based on Elegant Design
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=hyperos-Dark
+MetacityTheme=hyperos-Dark
+IconTheme=hyperos-Dark
+CursorTheme=hyperos-cursors
+ButtonLayout=close,minimize,maximize:menu
+
