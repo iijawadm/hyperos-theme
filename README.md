@@ -4,3 +4,9 @@ This theme is a fork of a themes found on GnomeLook, inspired by Xiaomi's HyperO
 
 the Extension open-bar has its hyperos style in it import it !!
 
+i will improve the clock shell
+
+
+here is some screenshots
+
+
