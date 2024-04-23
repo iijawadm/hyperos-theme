@@ -1,4 +1,4 @@
-/* Check Boxes 
+/* Check Boxes */
 
 .check-box StBoxLayout {
 	spacing: .8em;
@@ -13,7 +13,7 @@
 .check-box:focus StBin {
 	background-image: url("checkbox-off-focused.svg");
 }
-*/
+
 .check-box:checked StBin {
 	background-image: url("checkbox.svg");
 }
