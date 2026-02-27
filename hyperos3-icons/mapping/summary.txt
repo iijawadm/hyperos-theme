@@ -1,0 +1,6 @@
+total_entries=302
+known_mappings=112
+fallback_mappings=190
+unique_target_paths=282
+created_this_run=0
+skipped_existing=276
