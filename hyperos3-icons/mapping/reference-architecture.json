@@ -1,0 +1,496 @@
+{
+  "contexts": [
+    "actions",
+    "actions@2x",
+    "animations",
+    "animations@2x",
+    "apps",
+    "apps@2x",
+    "categories",
+    "categories@2x",
+    "devices",
+    "devices@2x",
+    "emblems",
+    "emblems@2x",
+    "mimes",
+    "mimes@2x",
+    "places",
+    "places@2x"
+  ],
+  "hierarchy": {
+    "actions": [
+      "16",
+      "22",
+      "24",
+      "32",
+      "symbolic"
+    ],
+    "actions@2x": [
+      "16",
+      "22",
+      "24",
+      "32",
+      "symbolic"
+    ],
+    "animations": [
+      "16",
+      "22",
+      "24"
+    ],
+    "animations@2x": [
+      "16",
+      "22",
+      "24"
+    ],
+    "apps": [
+      "32",
+      "scalable",
+      "symbolic"
+    ],
+    "apps@2x": [
+      "32",
+      "scalable",
+      "symbolic"
+    ],
+    "categories": [
+      "32",
+      "symbolic"
+    ],
+    "categories@2x": [
+      "32",
+      "symbolic"
+    ],
+    "devices": [
+      "16",
+      "22",
+      "24",
+      "scalable",
+      "symbolic"
+    ],
+    "devices@2x": [
+      "16",
+      "22",
+      "24",
+      "scalable",
+      "symbolic"
+    ],
+    "emblems": [
+      "16",
+      "22",
+      "24",
+      "symbolic"
+    ],
+    "emblems@2x": [
+      "16",
+      "22",
+      "24",
+      "symbolic"
+    ],
+    "mimes": [
+      "16",
+      "22",
+      "48",
+      "symbolic"
+    ],
+    "mimes@2x": [
+      "16",
+      "22",
+      "48",
+      "symbolic"
+    ],
+    "places": [
+      "16",
+      "22",
+      "24",
+      "48",
+      "symbolic"
+    ],
+    "places@2x": [
+      "16",
+      "22",
+      "24",
+      "48",
+      "symbolic"
+    ]
+  },
+  "formats": {
+    ".svg": 30356,
+    "<none>": 6,
+    ".png": 12,
+    ".megasync": 2
+  },
+  "naming_conventions": {
+    "characteristics": [
+      "lowercase",
+      "kebab-case",
+      "freedesktop alias names",
+      "legacy gnome stock_* names",
+      "symbolic suffix for monochrome"
+    ],
+    "sample_files": [
+      "albumfolder-properties.svg",
+      "answer-correct.svg",
+      "association.svg",
+      "containment.svg",
+      "debug-run-cursor.svg",
+      "dialog-filters.svg",
+      "document-print-direct.svg",
+      "document-print-preview.svg",
+      "exception.svg",
+      "generalisation.svg",
+      "gnumeric-column-delete.svg",
+      "go-right-symbolic.svg",
+      "group-edit.svg",
+      "gtk-floppy.svg",
+      "hidemouse.svg",
+      "kfm_home.svg",
+      "ktnef_extract_all_to.svg",
+      "labplot-transform-move.svg",
+      "mail-signed-part.svg",
+      "nocover.svg",
+      "office-chart-area-percentage.svg",
+      "office-chart-bar.svg",
+      "office-chart-scatter.svg",
+      "pattern.svg",
+      "player_play.svg",
+      "plugins.svg",
+      "previous.svg",
+      "rabbitvcs-resolve.svg",
+      "straight-connector.svg",
+      "text-convert-to-regular.svg",
+      "view-financial-account-reopen.svg",
+      "view-financial-list.svg",
+      "view-list-details.svg",
+      "view-pages-single.svg",
+      "view-task.svg",
+      "wizard_pdftools.svg",
+      "zoom-draw.svg",
+      "zoom-original.svg",
+      "zoom-out.svg",
+      "zoom.svg"
+    ]
+  },
+  "symlink_sample": [
+    {
+      "path": "actions/16/straight-connector.svg",
+      "target": "draw-connector.svg"
+    },
+    {
+      "path": "actions/16/albumfolder-properties.svg",
+      "target": "configure.svg"
+    },
+    {
+      "path": "actions/16/labplot-transform-move.svg",
+      "target": "transform-move.svg"
+    },
+    {
+      "path": "actions/16/hidemouse.svg",
+      "target": "kr_unselect.svg"
+    },
+    {
+      "path": "actions/16/previous.svg",
+      "target": "go-previous.svg"
+    },
+    {
+      "path": "actions/16/group-edit.svg",
+      "target": "document-edit.svg"
+    },
+    {
+      "path": "actions/16/text-convert-to-regular.svg",
+      "target": "draw-text.svg"
+    },
+    {
+      "path": "actions/16/document-print-preview.svg",
+      "target": "document-preview-archive.svg"
+    },
+    {
+      "path": "actions/16/nocover.svg",
+      "target": "media-album-cover-manager-amarok.svg"
+    },
+    {
+      "path": "actions/16/dialog-filters.svg",
+      "target": "view-filter.svg"
+    },
+    {
+      "path": "actions/16/generalisation.svg",
+      "target": "generalise.svg"
+    },
+    {
+      "path": "actions/16/gtk-floppy.svg",
+      "target": "document-save.svg"
+    },
+    {
+      "path": "actions/16/wizard_pdftools.svg",
+      "target": "document-preview-archive.svg"
+    },
+    {
+      "path": "actions/16/pattern.svg",
+      "target": "paint-pattern.svg"
+    },
+    {
+      "path": "actions/16/view-pages-single.svg",
+      "target": "snap-page.svg"
+    },
+    {
+      "path": "actions/16/rabbitvcs-resolve.svg",
+      "target": "edit-paste-style.svg"
+    },
+    {
+      "path": "actions/16/kfm_home.svg",
+      "target": "go-home.svg"
+    },
+    {
+      "path": "actions/16/answer-correct.svg",
+      "target": "dialog-ok.svg"
+    },
+    {
+      "path": "actions/16/gnumeric-column-delete.svg",
+      "target": "edit-table-delete-column.svg"
+    },
+    {
+      "path": "actions/16/zoom-draw.svg",
+      "target": "zoom-fit-best.svg"
+    },
+    {
+      "path": "actions/16/ktnef_extract_all_to.svg",
+      "target": "archive-extract.svg"
+    },
+    {
+      "path": "actions/16/player_play.svg",
+      "target": "media-playback-start.svg"
+    },
+    {
+      "path": "actions/16/go-right-symbolic.svg",
+      "target": "go-next.svg"
+    },
+    {
+      "path": "actions/16/gtk-media-forward-rtl.svg",
+      "target": "media-seek-backward.svg"
+    },
+    {
+      "path": "actions/16/stock_score-lowest.svg",
+      "target": "flag-red.svg"
+    },
+    {
+      "path": "actions/16/gtk-ok.svg",
+      "target": "dialog-ok-apply.svg"
+    },
+    {
+      "path": "actions/16/shallow-history.svg",
+      "target": "appointment-new.svg"
+    },
+    {
+      "path": "actions/16/actor.svg",
+      "target": "im-user.svg"
+    },
+    {
+      "path": "actions/16/gtk-add.svg",
+      "target": "list-add.svg"
+    },
+    {
+      "path": "actions/16/amarok_playlist_refresh.svg",
+      "target": "view-refresh.svg"
+    },
+    {
+      "path": "actions/16/bqm-diff.svg",
+      "target": "run-build.svg"
+    },
+    {
+      "path": "actions/16/go-last-view.svg",
+      "target": "go-last.svg"
+    },
+    {
+      "path": "actions/16/math3.svg",
+      "target": "uniassociation.svg"
+    },
+    {
+      "path": "actions/16/project_rebuild.svg",
+      "target": "run-build.svg"
+    },
+    {
+      "path": "actions/16/kdenlive-menu.svg",
+      "target": "application-menu.svg"
+    },
+    {
+      "path": "actions/16/help-donate-ars.svg",
+      "target": "help-donate-usd.svg"
+    },
+    {
+      "path": "actions/16/filename-genre-amarok.svg",
+      "target": "favorite-genres-amarok.svg"
+    },
+    {
+      "path": "actions/16/albumfolder-new.svg",
+      "target": "folder-new.svg"
+    },
+    {
+      "path": "actions/16/dialog-apply.svg",
+      "target": "dialog-ok-apply.svg"
+    },
+    {
+      "path": "actions/16/user.svg",
+      "target": "im-user.svg"
+    },
+    {
+      "path": "actions/16/tool_text.svg",
+      "target": "text-field.svg"
+    },
+    {
+      "path": "actions/16/kdenlive-zoom-small.svg",
+      "target": "zoom-out-y.svg"
+    },
+    {
+      "path": "actions/16/view-bank-add.svg",
+      "target": "view-institution-add.svg"
+    },
+    {
+      "path": "actions/16/kt-set-max-download-speed.svg",
+      "target": "edit-download.svg"
+    },
+    {
+      "path": "actions/16/mail-forward-attachment.svg",
+      "target": "mail-attachment.svg"
+    },
+    {
+      "path": "actions/16/cab_view.svg",
+      "target": "mail-thread-watch.svg"
+    },
+    {
+      "path": "actions/16/mail-sent.svg",
+      "target": "mail-send.svg"
+    },
+    {
+      "path": "actions/16/bookmark-new-list.svg",
+      "target": "bookmark-new.svg"
+    },
+    {
+      "path": "actions/16/smallskip.svg",
+      "target": "format-line-spacing-normal.svg"
+    },
+    {
+      "path": "actions/16/tool_polyline.svg",
+      "target": "draw-polyline.svg"
+    },
+    {
+      "path": "actions/16/amarok_playlist.svg",
+      "target": "view-media-playlist.svg"
+    },
+    {
+      "path": "actions/16/randomize.svg",
+      "target": "media-playlist-shuffle.svg"
+    },
+    {
+      "path": "actions/16/checkmark.svg",
+      "target": "dialog-ok-apply.svg"
+    },
+    {
+      "path": "actions/16/bqm-addqueue.svg",
+      "target": "list-add.svg"
+    },
+    {
+      "path": "actions/16/hide_table_row.svg",
+      "target": "hint.svg"
+    },
+    {
+      "path": "actions/16/dirsync.svg",
+      "target": "folder-sync.svg"
+    },
+    {
+      "path": "actions/16/gtk-refresh.svg",
+      "target": "view-refresh.svg"
+    },
+    {
+      "path": "actions/16/bqm-add.svg",
+      "target": "list-add.svg"
+    },
+    {
+      "path": "actions/16/add-placemark.svg",
+      "target": "flag-red.svg"
+    },
+    {
+      "path": "actions/16/stock_save-as.svg",
+      "target": "document-save-as.svg"
+    },
+    {
+      "path": "actions/16/edit-clear-locationbar-rtl.svg",
+      "target": "edit-clear.svg"
+    },
+    {
+      "path": "actions/16/tab_duplicate.svg",
+      "target": "tab-duplicate.svg"
+    },
+    {
+      "path": "actions/16/bookmark-toolbar.svg",
+      "target": "bookmark-new.svg"
+    },
+    {
+      "path": "actions/16/irc-close-channel.svg",
+      "target": "process-stop.svg"
+    },
+    {
+      "path": "actions/16/borderpainter.svg",
+      "target": "format-border-style.svg"
+    },
+    {
+      "path": "actions/16/stock_media-rec.svg",
+      "target": "media-record.svg"
+    },
+    {
+      "path": "actions/16/view-categories.svg",
+      "target": "view-list-details.svg"
+    },
+    {
+      "path": "actions/16/mail_forward.svg",
+      "target": "mail-forward.svg"
+    },
+    {
+      "path": "actions/16/enumerate.svg",
+      "target": "format-list-ordered.svg"
+    },
+    {
+      "path": "actions/16/meeting-attending.svg",
+      "target": "user-group-new.svg"
+    },
+    {
+      "path": "actions/16/view-process-users.svg",
+      "target": "user-group-new.svg"
+    },
+    {
+      "path": "actions/16/umbrello_diagram_state.svg",
+      "target": "media-playback-start.svg"
+    },
+    {
+      "path": "actions/16/gtk-directory.svg",
+      "target": "document-open-folder.svg"
+    },
+    {
+      "path": "actions/16/user-identity.svg",
+      "target": "im-user.svg"
+    },
+    {
+      "path": "actions/16/mail-encrypted.svg",
+      "target": "mail-encrypted-full.svg"
+    },
+    {
+      "path": "actions/16/adress-book-new.svg",
+      "target": "address-book-new.svg"
+    },
+    {
+      "path": "actions/16/internet-services.svg",
+      "target": "internet-amarok.svg"
+    },
+    {
+      "path": "actions/16/object-hidden.svg",
+      "target": "layer-visible-off.svg"
+    },
+    {
+      "path": "actions/16/configure_kile.svg",
+      "target": "configure.svg"
+    },
+    {
+      "path": "actions/16/document-edit-verify.svg",
+      "target": "document-preview-archive.svg"
+    }
+  ],
+  "symlink_count": 8738
+}
