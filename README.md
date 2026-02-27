@@ -81,7 +81,7 @@ mkdir -p ~/.local/share/gnome-shell/extensions
 cp -r extenstions/* ~/.local/share/gnome-shell/extensions/
 ```
 
-Then restart GNOME Shell (on X11: press `Alt`+`F2`, type `r`, Enter) and enable extensions via `gnome-extensions-app` or `gnome-tweaks`.
+Then restart GNOME Shell (on X11: press `Alt`+`F2`, type `r`, Enter) and enable extensions via `gnome-extensions-app`.
 
 Notes:
 - `openbar@neuromorph`: includes HyperOS style (select in preferences)
