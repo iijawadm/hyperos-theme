@@ -1,3 +1,9 @@
+<div align="center">
+
+<img src="banner.png" alt="HyperOS GNOME Theme" width="100%"/>
+
+</div>
+
 ## HyperOS GNOME Theme
 
 A GNOME theme inspired by Xiaomi's HyperOS UI/UX. It brings a vibrant, clean aesthetic to your Linux desktop with matching GTK, GNOME Shell, icons, sounds, and fonts.
