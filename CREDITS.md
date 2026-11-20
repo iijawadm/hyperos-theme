@@ -11,7 +11,7 @@ This repository combines original desktop theming work, independently modified c
 | Component | Path | License / Terms | Notes |
 | --- | --- | --- | --- |
 | Repository curation, layout scripts, and banner | `README.md`, `banner.png`, `gnome-layout-manager/`, `screenshots/` | Maintained by `iijawadm` | Project curation, GNOME layout integration, and documentation |
-| Original HyperOS-inspired icons (drop-in directory) | `sources/original/` | Author-owned (`iijawadm`) | Dedicated directory for Jawad's original/independently created HyperOS-inspired artwork (takes highest priority in `./build.sh`) |
+| Original HyperOS 3 / 4 style vector icons (`places` & `mimes`) | `sources/original/places/`, `sources/original/mimes/`, `scripts/generate_hyperos_places.py` | Author-owned (`iijawadm`) | Clean original Xiaomi HyperOS 3 / 4 inspired SVG folder, trash, and MIME icons (takes highest priority in `./build.sh`) |
 | Automated Android-to-Linux icon theme pipeline | `scripts/hyperos_converter/`, `build.sh`, `validate.sh`, `install.sh`, `uninstall.sh`, `scripts/test_pipeline.py` | Open-source tooling in this repository | Freedesktop icon conversion, mapping, validation, and HTML preview gallery |
 
 ---

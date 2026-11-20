@@ -73,6 +73,7 @@ def map_assets(
     """Map scanned assets to Freedesktop Linux icon names with strict conflict protection."""
     curated = load_curated_mappings(curated_path)
     exclude_helpers: dict[str, str] = curated.get("exclude_helpers", {})
+    original_aliases: dict[str, list[str]] = curated.get("original_aliases", {})
     curated_apps: dict[str, dict] = curated.get("apps", {})
     curated_status: dict[str, dict] = curated.get("status", {})
 
@@ -133,6 +134,11 @@ def map_assets(
                     )
                 )
                 continue
+            orig_alias_list = [
+                normalize_linux_icon_name(a)
+                for a in original_aliases.get(f"{ctx}/{canonical}", [])
+                if a and a != canonical
+            ]
             dec = MappingDecision(
                 asset=asset,
                 status="mapped",
@@ -141,6 +147,7 @@ def map_assets(
                 canonical_name=canonical,
                 context=ctx,
                 app_name=asset.stem,
+                aliases=orig_alias_list,
                 reason="Original HyperOS-inspired artwork preserved directly",
             )
             claimed_targets[key] = dec

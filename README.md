@@ -64,11 +64,11 @@ This scans `sources/original/`, `hyperos3-icons/`, and `sources/android/`, gener
 # User installation (~/.local/share/icons/HyperOS-Icons) — recommended
 ./install.sh --user
 
-# User installation + apply immediately in GNOME (Wayland-safe)
-./install.sh --user --apply
+# User installation + updated Hyperos-Dark GNOME Shell theme + apply immediately (Wayland-safe)
+./install.sh --user --with-shell --apply
 
 # System-wide installation (/usr/share/icons/HyperOS-Icons)
-./install.sh --system
+./install.sh --system --with-shell
 ```
 
 Then select **HyperOS** in **GNOME Tweaks** → *Appearance* → *Icons* (or your desktop environment's icon theme settings).

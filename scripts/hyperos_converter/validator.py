@@ -14,7 +14,7 @@ from pathlib import Path
 from PIL import Image
 
 
-VALID_ICON_NAME_RE = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]*$")
+VALID_ICON_NAME_RE = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._+-]*$")
 
 
 @dataclass
@@ -134,16 +134,24 @@ def validate_theme(theme_root: Path) -> ValidationReport:
 
             if fname.endswith(".png"):
                 regular_pngs += 1
+                is_animation_sheet = len(rel_dir_path.parts) >= 2 and rel_dir_path.parts[1] == "animations"
                 try:
                     with Image.open(fpath) as img:
                         img.load()
                         w, h = img.size
-                        if expected_size is not None and (w != expected_size or h != expected_size):
-                            dimension_mismatches += 1
-                            report.add_error(
-                                f"Dimension mismatch in {rel_dir_str}/{fname}: expected {expected_size}x{expected_size}, got {w}x{h}"
-                            )
-                        if "A" in img.getbands():
+                        if expected_size is not None:
+                            if is_animation_sheet:
+                                if w % expected_size != 0 or h % expected_size != 0:
+                                    dimension_mismatches += 1
+                                    report.add_error(
+                                        f"Animation spritesheet mismatch in {rel_dir_str}/{fname}: {w}x{h} not multiple of {expected_size}"
+                                    )
+                            elif w != expected_size or h != expected_size:
+                                dimension_mismatches += 1
+                                report.add_error(
+                                    f"Dimension mismatch in {rel_dir_str}/{fname}: expected {expected_size}x{expected_size}, got {w}x{h}"
+                                )
+                        if "A" in img.getbands() or (img.mode == "P" and "transparency" in img.info):
                             transparent_pngs += 1
                         else:
                             report.add_warning(f"PNG without alpha channel: {rel_dir_str}/{fname}")
@@ -198,3 +206,39 @@ def validate_theme(theme_root: Path) -> ValidationReport:
             report.add_warning(f"Example icon '{example_icon}' not found directly in theme (will fall back via Inherits=)")
 
     return report
+
+
+def validate_gnome_shell_css(css_path: Path) -> tuple[bool, list[str]]:
+    """Lint GNOME Shell St CSS to prevent broken transparency or invalid shorthand regressions."""
+    errors: list[str] = []
+    if not css_path.is_file():
+        return True, []
+
+    text = css_path.read_text(encoding="utf-8", errors="replace")
+    # Strip /* ... */ comments before syntax checks
+    no_comments = re.sub(r"/\*.*?\*/", "", text, flags=re.S)
+
+    if no_comments.count("{") != no_comments.count("}"):
+        errors.append(f"Unbalanced CSS braces in {css_path.name}: {{={no_comments.count('{')}, }}={no_comments.count('}')}")
+
+    for lineno, line in enumerate(text.splitlines(), start=1):
+        stripped = line.strip()
+        if stripped.startswith("/*") or stripped.startswith("*"):
+            continue
+        if re.match(r"^background\s*:", stripped):
+            errors.append(
+                f"{css_path.name}:{lineno}: uses invalid St CSS shorthand 'background:' (use 'background-color:')"
+            )
+        if "background-color: none" in stripped:
+            errors.append(
+                f"{css_path.name}:{lineno}: uses invalid 'background-color: none' (use 'transparent')"
+            )
+
+    if ".popup-menu-boxpointer" not in no_comments:
+        errors.append(f"{css_path.name}: missing .popup-menu-boxpointer rule for GNOME 45-49 popovers")
+
+    popover_match = re.search(r"\.popup-menu-content[^{]*\{([^}]*)\}", no_comments)
+    if not popover_match or "background-color:" not in popover_match.group(1):
+        errors.append(f"{css_path.name}: .popup-menu-content must declare an explicit background-color")
+
+    return len(errors) == 0, errors

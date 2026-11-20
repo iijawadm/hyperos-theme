@@ -37,7 +37,7 @@
 
 .toggle-switch:checked {
 	background-image: url("./toggle-on.svg");
-	background-color: rgba(111, 173, 235, 1);
+	background-color: rgba(43, 133, 255, 1);
 }
 
 
@@ -63,11 +63,11 @@
 
 .dnd-button .toggle-switch:checked {
 	background-image: url("./toggle-on_dnd.svg");
-	background-color: rgba(111, 173, 235, 1);
+	background-color: rgba(43, 133, 255, 1);
 }
 
 .dnd-button:hover .toggle-switch:checked {
-	background-color: rgba(140, 191, 242, 1);
+	background-color: rgba(74, 155, 255, 1);
 }
 
 .dnd-button:focus {
@@ -111,7 +111,7 @@
 }
 
 .message-list-clear-button:insensitive {
-	background-color: rgba(60, 63, 66, 0.2);
+	background-color: rgba(38, 43, 54, 0.78);
 }
 
 /* Sliders */
@@ -120,7 +120,7 @@
 .level {
 	-barlevel-height: 16px;
 	-barlevel-background-color: rgba(180, 216, 253, 0.08);
-	-barlevel-active-background-color: rgba(111, 173, 235, 1);
+	-barlevel-active-background-color: rgba(43, 133, 255, 1);
 	-barlevel-border-width: 0px;
 	/* overfill */
 	-barlevel-overdrive-color: #c01c28;
@@ -180,7 +180,7 @@ StEntry {
 }
 
 .search-entry {
-	background-color: rgba(60, 63, 66, 0.2);
+	background-color: rgba(38, 43, 54, 0.78);
 
 }
 
@@ -249,20 +249,20 @@ StEntry:focus {
 #panel .screencast-indicator,
 #panel .remote-access-indicator,
 #panel .panel-button.screen-sharing-indicator { /* when sharing screen */
-	background: #cd9309;
+	background-color: #cd9309;
 }
 
 #panel .panel-button.screen-sharing-indicator:hover {
-	background: rgba(205, 147, 9, 0.9);
+	background-color: rgba(205, 147, 9, 0.9);
 }
 
 /* indicator when recording screen */
 #panel .panel-button.screen-recording-indicator {
-	background: #c01c28;
+	background-color: #c01c28;
 }
 
 #panel .panel-button.screen-recording-indicator:hover {
-	background: rgba(192, 28, 40, 0.9);
+	background-color: rgba(192, 28, 40, 0.9);
 }
 
 
@@ -301,7 +301,7 @@ StEntry:focus {
 .popup-menu-content, /* popover content */
 .candidate-popup-content { /* datemenu, quick settings... */
 	color: rgba(233, 242, 250, 1);
-	background: rgba(18, 20, 21, 0.95); 
+	background-color: rgba(20, 23, 30, 0.92); 
 	padding: 8px;
 	border-radius: 20px;
 	border: 1px solid rgba(255, 255, 255, 0.07);
@@ -413,13 +413,13 @@ StEntry:focus {
 /* today header button */
 .datemenu-today-button {
 	color: rgba(233, 242, 250, 0.67);
-	background-color: none;
+	background-color: transparent;
 	border-radius: 12px;
 }
 
 .datemenu-today-button:hover {
 	transition-duration: 100ms;
-	background-color: rgba(60, 63, 66, 0.2);
+	background-color: rgba(38, 43, 54, 0.78);
 	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03) !important;
 }
 
@@ -444,7 +444,7 @@ StEntry:focus {
 
 .calendar {
 	border-radius: 14px;
-	background-color: rgba(60, 63, 66, 0.2);
+	background-color: rgba(38, 43, 54, 0.78);
 	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03) !important;
 	padding: 5px;
 }
@@ -498,15 +498,15 @@ StEntry:focus {
 
 .calendar-day:selected,
 .calendar .calendar-day-heading:selected /* 46+ */ {
-	background: rgba(201, 216, 232, 0.13);
+	background-color: rgba(201, 216, 232, 0.13);
 	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
 }
 
 /* today button */
 .calendar-today,
 .calendar-today:selected {
-	background-color: rgba(111, 173, 235, 1);
-	color: rgba(7, 25, 43, 0.87) !important;
+	background-color: rgba(43, 133, 255, 1);
+	color: #ffffff !important;
 	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
 }
 
@@ -514,7 +514,7 @@ StEntry:focus {
 .calendar-today:selected:hover,
 .calendar-today:focus,
 .calendar-today:selected:focus {
-	background-color: rgba(140, 191, 242, 1);
+	background-color: rgba(74, 155, 255, 1);
 } 
 
 /* if day has event */
@@ -560,7 +560,7 @@ StEntry:focus {
 .events-button,
 .world-clocks-button,
 .weather-button {
-	background-color: rgba(60, 63, 66, 0.2);
+	background-color: rgba(38, 43, 54, 0.78);
 	color: rgba(233, 242, 250, 0.67);
 	border-radius: 14px;
 	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
@@ -708,7 +708,7 @@ StEntry:focus {
 /* collapsed folder dialog */
 .app-folder-dialog {
 	border-radius: 32px;
-	background-color: rgba(18, 20, 21, 0.95);
+	background-color: rgba(20, 23, 30, 0.92);
 	border: none;
 	padding: 0; /* because of icon grid */
 	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.07);
@@ -840,7 +840,7 @@ StEntry:focus {
 	width: 10px;
 	height: 4px;
 	border-radius: 2px;
-	background: rgba(178, 191, 203, 1);
+	background-color: rgba(178, 191, 203, 1);
 }
 
 #dash .app-grid-running-dot {
@@ -931,7 +931,7 @@ StEntry:focus {
 #dashtodockContainer.right.extended.overview #dash .dash-background,
 #dashtodockContainer.right.extended.overview.dashtodock #dash .dash-background,
 #dashtodockContainer.right.extended.overview.shrink #dash .dash-background {
-	background-color: rgba(18, 20, 21, 0.95);
+	background-color: rgba(20, 23, 30, 0.92);
 }
 
 /* Screenshot UI */
@@ -939,7 +939,7 @@ StEntry:focus {
 /* main screenshot panel section */
 .screenshot-ui-panel {
 	color: rgba(233, 242, 250, 1);
-	background-color: rgba(18, 20, 21, 0.95);
+	background-color: rgba(20, 23, 30, 0.92);
 	border: 1px solid rgba(255, 255, 255, 0.07);
 	border-radius: 22px;
 	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.07);
@@ -957,7 +957,7 @@ StEntry:focus {
 .screenshot-ui-type-button:hover,
 .screenshot-ui-show-pointer-button:focus,
 .screenshot-ui-type-button:focus {
-	background: rgba(180, 216, 253, 0.08);
+	background-color: rgba(180, 216, 253, 0.08);
 	color: rgba(233, 242, 250, 1);
 }
 
@@ -996,11 +996,11 @@ StEntry:focus {
 
 /* window border when selecting */
 .screenshot-ui-window-selector-window:hover .screenshot-ui-window-selector-window-border {
-	border-color: rgba(111, 173, 235, 1);
+	border-color: rgba(43, 133, 255, 1);
 }
 
 .screenshot-ui-window-selector-window:checked .screenshot-ui-window-selector-window-border {
-	border-color: rgba(111, 173, 235, 1);
+	border-color: rgba(43, 133, 255, 1);
 	background-color: rgba(38, 66, 94, 0.2);
 }
 
@@ -1008,8 +1008,8 @@ StEntry:focus {
 
 /* check icon when selected window */
 .screenshot-ui-window-selector-window:checked .screenshot-ui-window-selector-check {
-	color: rgba(7, 25, 43, 0.87);
-	background-color: rgba(111, 173, 235, 1);
+	color: #ffffff;
+	background-color: rgba(43, 133, 255, 1);
 	border-radius: 99px;
 }
 
@@ -1019,7 +1019,7 @@ StEntry:focus {
 	width: 36px;
 	height: 36px;
 	border-radius: 99px;
-	border: 4px rgba(178, 191, 203, 1);
+	border: 4px solid rgba(178, 191, 203, 1);
 	padding: 4px;
 }
 
@@ -1078,7 +1078,7 @@ StEntry:focus {
 
 .screenshot-ui-shot-cast-button:checked {
 	background-color: rgba(178, 191, 203, 1);
-	color: rgba(7, 25, 43, 0.87);
+	color: #ffffff;
 }
 
 .screenshot-ui-area-indicator-shade {
@@ -1239,7 +1239,7 @@ StEntry:focus {
 /* Tiled window previews */
 .tile-preview {
 	background-color: rgba(38, 66, 94, 0.2);
-	border: 1px solid rgba(111, 173, 235, 1);
+	border: 1px solid rgba(43, 133, 255, 1);
 }
 
 /* .windows-close in screenshot.css */
@@ -1250,7 +1250,7 @@ StEntry:focus {
 .workspace-switcher, /* ctrl + alt + arr_left/arr_right  */
 .osd-window /* volume/brightness/.. switcher */ {
 	color: rgba(233, 242, 250, 1);
-	background-color: rgba(18, 20, 21, 0.95);
+	background-color: rgba(20, 23, 30, 0.92);
 	border: 1px solid rgba(255, 255, 255, 0.07);
 	border-radius: 20px;
 	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.07);
@@ -1304,7 +1304,7 @@ StEntry:focus {
 /* Modal dialog */
 .modal-dialog {
 	border-radius: 20px;
-	background-color: rgba(18, 20, 21, 0.95);
+	background-color: rgba(20, 23, 30, 0.92);
 	border: none;
 	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
 	color: rgba(233, 242, 250, 1);
@@ -1326,7 +1326,7 @@ StEntry:focus {
 
 /* password entry */
 .prompt-dialog-password-entry {
-	background-color: rgba(60, 63, 66, 0.2);
+	background-color: rgba(38, 43, 54, 0.78);
 }
 
 
@@ -1382,18 +1382,18 @@ StEntry:focus {
 .modal-dialog-linked-button:focus,
 .notification-button:hover,
 .notification-button:focus {
-	background: rgba(201, 216, 232, 0.13);
+	background-color: rgba(201, 216, 232, 0.13);
 	color: rgba(233, 242, 250, 1);
 }
 
 .modal-dialog-linked-button:last-child {
-	background-color: rgba(111, 173, 235, 1);
-	color: rgba(7, 25, 43, 0.87);
+	background-color: rgba(43, 133, 255, 1);
+	color: #ffffff;
 }
 
 .modal-dialog-linked-button:last-child:hover,
 .modal-dialog-linked-button:last-child:focus {
-	background-color: rgba(140, 191, 242, 1);
+	background-color: rgba(74, 155, 255, 1);
 }
 
 .modal-dialog-linked-button:focus,
@@ -1416,7 +1416,7 @@ StEntry:focus {
 .hotplug-notification-item:insensitive,
 .notification-banner .notification-button:insensitive {
 	color: rgba(7, 25, 43, 0.67);
-	background-color: rgba(111, 173, 235, 0.5);
+	background-color: rgba(43, 133, 255, 0.5);
 }
 /* Lock Screen / Login screen */
 
@@ -1458,7 +1458,7 @@ StEntry:focus {
 
 /* users button */
 .login-dialog-user-list .login-dialog-user-list-item {
-    background-color: rgba(60, 63, 66, 0.2);
+    background-color: rgba(38, 43, 54, 0.78);
     border-radius: 20px;
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
 }
@@ -1474,7 +1474,7 @@ StEntry:focus {
 .login-dialog-user-list:expanded .login-dialog-user-list-item:focus,
 .login-dialog-user-list:expanded .login-dialog-user-list-item:selected {
     background-color: rgba(65, 140, 214, 1);
-    /* color: rgba(7, 25, 43, 0.87); don't work*/
+    /* color: #ffffff; don't work*/
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.07);
 }
 
@@ -1674,16 +1674,16 @@ StEntry:focus {
 .quick-toggle:checked,
 .quick-menu-toggle .quick-toggle:checked,
 .quick-menu-toggle .quick-toggle-arrow:checked {
-	color: rgba(7, 25, 43, 0.87);
-	background-color: rgba(111, 173, 235, 1);
+	color: #ffffff;
+	background-color: rgba(43, 133, 255, 1);
 	border-color: transparent;
 }
 
 .quick-toggle:checked:hover,
 .quick-menu-toggle .quick-toggle:checked:hover,
 .quick-menu-toggle .quick-toggle-arrow:checked:hover {
-	color: rgba(7, 25, 43, 0.87);
-	background-color: rgba(140, 191, 242, 1);
+	color: #ffffff;
+	background-color: rgba(74, 155, 255, 1);
 }
 
 
@@ -1692,7 +1692,7 @@ StEntry:focus {
 .quick-slider .slider-bin {
 	padding: 4px;
 	margin: 0;
-	color: rgba(7, 25, 43, 0.87);
+	color: #ffffff;
 	border-radius: 99px;
 }
 
@@ -1720,7 +1720,7 @@ StEntry:focus {
 /* overrides because of 
 https://gitlab.gnome.org/GNOME/gnome-shell/-/commit/beb77f58243265a6cc62b720a5b0ecd66efd50a1#fb75f14505e58d3bc51f2498ef328d1405d89e83_94_95 */
 .quick-toggle-menu {
-	background-color: rgba(18, 20, 21, 0.95) !important; 
+	background-color: rgba(20, 23, 30, 0.92) !important; 
 	color: rgba(233, 242, 250, 1) !important;
 	border-radius: 18px;
 	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
@@ -1737,8 +1737,8 @@ https://gitlab.gnome.org/GNOME/gnome-shell/-/commit/beb77f58243265a6cc62b720a5b0
 }
 
 .quick-toggle-menu .header .icon.active {
-	background-color: rgba(111, 173, 235, 1);
-	color: rgba(7, 25, 43, 0.87);
+	background-color: rgba(43, 133, 255, 1);
+	color: #ffffff;
 }
 
 /* connect / disconnect text color (expanded menu) */
@@ -1788,8 +1788,8 @@ https://gitlab.gnome.org/GNOME/gnome-shell/-/commit/beb77f58243265a6cc62b720a5b0
 }
 
 /* dnd and clear button */
-.message-list-controls:ltr { padding: auto 0 auto auto; }
-.message-list-controls:rtl { padding: auto auto auto 0; }
+.message-list-controls:ltr { padding: 8px 4px 4px 4px; }
+.message-list-controls:rtl { padding: 8px 4px 4px 4px; }
 
 /* "No Notifications" text */
 .message-list-placeholder {
@@ -1811,7 +1811,7 @@ https://gitlab.gnome.org/GNOME/gnome-shell/-/commit/beb77f58243265a6cc62b720a5b0
 
 /* Message OSD */
 .notification-banner {
-	background-color: rgba(18, 20, 21, 0.95);
+	background-color: rgba(20, 23, 30, 0.92);
 	color: rgba(233, 242, 250, 1);
 	border: 1px solid rgba(255, 255, 255, 0.07);
 	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.07);
@@ -1820,7 +1820,7 @@ https://gitlab.gnome.org/GNOME/gnome-shell/-/commit/beb77f58243265a6cc62b720a5b0
 
 /* messages in menus */
 .message-list .message, .popup-menu-content .message {
-	background-color: rgba(60, 63, 66, 0.2);
+	background-color: rgba(38, 43, 54, 0.78);
 	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
 	transition-duration: 100ms;
 }
@@ -1940,7 +1940,7 @@ https://gitlab.gnome.org/GNOME/gnome-shell/-/commit/beb77f58243265a6cc62b720a5b0
 	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
 	border-radius: 18px;
 	border: none;
-	background-color: rgba(60, 63, 66, 0.2);
+	background-color: rgba(38, 43, 54, 0.78);
 	color: rgba(233, 242, 250, 1);
 }
 
@@ -1984,4 +1984,329 @@ https://gitlab.gnome.org/GNOME/gnome-shell/-/commit/beb77f58243265a6cc62b720a5b0
 .search-provider-icon:active {
 	background-color: rgba(201, 216, 232, 0.13);
 	color: rgba(233, 242, 250, 1);
+}
+
+
+/* ==========================================================================
+   HyperOS 3 / 4 Control Center & Frosted Obsidian Overrides (GNOME 45-49)
+   ========================================================================== */
+
+/* Top Status Bar — clean half-circle pill buttons */
+#panel {
+	background-color: rgba(16, 19, 25, 0.88);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+	height: 34px;
+	font-size: 13.5px;
+	box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.22);
+}
+
+#panel .panel-button,
+#panel .panel-button .clock,
+#panel .clock-display StIcon {
+	border-radius: 999px;
+	background-color: rgba(255, 255, 255, 0.08);
+	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+	color: #f4f7fc;
+}
+
+#panel .panel-button:hover,
+#panel .panel-button:hover .clock,
+#panel .panel-button:active,
+#panel .panel-button:active .clock {
+	background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Fix GNOME 46-49 popover boxpointer & prevent broken transparent popovers */
+.popup-menu-boxpointer,
+.candidate-popup-boxpointer {
+	-arrow-rise: 6px;
+	-arrow-base: 18px;
+	-arrow-border-radius: 26px;
+	-arrow-background-color: rgba(20, 23, 30, 0.93);
+	-arrow-border-color: rgba(255, 255, 255, 0.11);
+	-arrow-border-width: 1px;
+}
+
+.popup-menu-content,
+.candidate-popup-content {
+	color: #f4f7fc;
+	background-color: rgba(20, 23, 30, 0.93);
+	padding: 10px;
+	border-radius: 26px;
+	border: 1px solid rgba(255, 255, 255, 0.11);
+	box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.45);
+}
+
+.datemenu-popover .popup-menu-content {
+	border-radius: 28px;
+	padding: 12px;
+	background-color: rgba(20, 23, 30, 0.93);
+}
+
+/* HyperOS 3 / 4 Control Center (Quick Settings) */
+.quick-settings {
+	padding: 18px;
+	border-radius: 28px;
+	background-color: rgba(20, 23, 30, 0.93);
+	border: 1px solid rgba(255, 255, 255, 0.11);
+	box-shadow: 0 14px 36px 0 rgba(0, 0, 0, 0.48);
+}
+
+.quick-settings-grid {
+	spacing-rows: 10px;
+	spacing-columns: 10px;
+}
+
+/* Circular top action buttons (Screenshot, Settings, Lock, Power) */
+.quick-settings .icon-button,
+.bms-popup-background-transparent .quick-settings .icon-button,
+.bms-popup-background-dark .quick-settings .icon-button {
+	border-radius: 999px !important;
+	background-color: rgba(255, 255, 255, 0.10) !important;
+	color: #f4f7fc !important;
+	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08) !important;
+}
+
+.quick-settings .icon-button:hover,
+.bms-popup-background-transparent .quick-settings .icon-button:hover,
+.bms-popup-background-dark .quick-settings .icon-button:hover {
+	background-color: rgba(255, 255, 255, 0.18) !important;
+}
+
+/* HyperOS Phone Control Center Thick Pill Brightness & Volume Sliders (no clunky knob) */
+.slider,
+.level,
+.quick-slider .slider,
+.bms-popup-background-transparent .quick-slider .slider,
+.bms-popup-background-dark .quick-slider .slider {
+	-barlevel-height: 26px;
+	-barlevel-background-color: rgba(255, 255, 255, 0.13);
+	-barlevel-active-background-color: #2B85FF;
+	-barlevel-border-width: 0px;
+	-barlevel-active-border-width: 0px;
+	-barlevel-overdrive-color: #ff4d4f;
+	-barlevel-overdrive-separator-width: 2px;
+	-slider-handle-radius: 0px;
+	color: #ffffff;
+}
+
+.quick-slider > StBoxLayout {
+	spacing: 8px;
+}
+
+.quick-slider .slider-bin {
+	padding: 4px 2px;
+	border-radius: 999px;
+}
+
+.quick-slider .icon-button {
+	background-color: transparent !important;
+	box-shadow: none !important;
+	border-radius: 999px !important;
+	color: #f4f7fc !important;
+	padding: 8px;
+}
+
+.quick-slider .icon-button:hover {
+	background-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+/* Full Half-Circle Pill Quick Toggles */
+.quick-toggle,
+.quick-toggle-has-menu {
+	border-radius: 999px;
+	min-height: 46px;
+}
+
+.quick-toggle,
+.quick-menu-toggle .quick-toggle,
+.bms-popup-background-transparent .quick-toggle,
+.bms-popup-background-dark .quick-toggle,
+.bms-popup-background-light .quick-toggle {
+	border-radius: 999px !important;
+	background-color: rgba(255, 255, 255, 0.10) !important;
+	color: #f4f7fc !important;
+	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06) !important;
+	transition-duration: 120ms;
+}
+
+.quick-toggle:hover,
+.quick-menu-toggle .quick-toggle:hover,
+.bms-popup-background-transparent .quick-toggle:hover,
+.bms-popup-background-dark .quick-toggle:hover {
+	background-color: rgba(255, 255, 255, 0.16) !important;
+	color: #ffffff !important;
+}
+
+/* Seamless Split Toggle Join (Bluetooth / Wired / Tether / Power / Caffeine / GSConnect + Arrow) */
+.quick-toggle-has-menu .quick-toggle:ltr,
+.bms-popup-background-transparent .quick-toggle-has-menu .quick-toggle:ltr,
+.bms-popup-background-dark .quick-toggle-has-menu .quick-toggle:ltr {
+	border-radius: 999px 0 0 999px !important;
+	margin-right: 0 !important;
+}
+
+.quick-toggle-has-menu .quick-toggle:rtl,
+.bms-popup-background-transparent .quick-toggle-has-menu .quick-toggle:rtl,
+.bms-popup-background-dark .quick-toggle-has-menu .quick-toggle:rtl {
+	border-radius: 0 999px 999px 0 !important;
+	margin-left: 0 !important;
+}
+
+.quick-toggle-has-menu .quick-toggle:ltr:last-child,
+.quick-toggle-has-menu .quick-toggle:rtl:last-child {
+	border-radius: 999px !important;
+}
+
+.quick-toggle-has-menu .quick-toggle-menu-button,
+.bms-popup-background-transparent .quick-toggle-has-menu .quick-toggle-menu-button,
+.bms-popup-background-dark .quick-toggle-has-menu .quick-toggle-menu-button,
+.bms-popup-background-light .quick-toggle-has-menu .quick-toggle-menu-button {
+	padding: 0 13px 0 10px !important;
+	background-color: rgba(255, 255, 255, 0.10) !important;
+	color: #f4f7fc !important;
+	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06) !important;
+	border: none !important;
+	margin: 0 !important;
+	transition-duration: 120ms;
+}
+
+.quick-toggle-has-menu .quick-toggle-menu-button:ltr,
+.bms-popup-background-transparent .quick-toggle-has-menu .quick-toggle-menu-button:ltr,
+.bms-popup-background-dark .quick-toggle-has-menu .quick-toggle-menu-button:ltr {
+	border-radius: 0 999px 999px 0 !important;
+}
+
+.quick-toggle-has-menu .quick-toggle-menu-button:rtl,
+.bms-popup-background-transparent .quick-toggle-has-menu .quick-toggle-menu-button:rtl,
+.bms-popup-background-dark .quick-toggle-has-menu .quick-toggle-menu-button:rtl {
+	border-radius: 999px 0 0 999px !important;
+}
+
+.quick-toggle-has-menu .quick-toggle-menu-button:hover,
+.bms-popup-background-transparent .quick-toggle-has-menu .quick-toggle-menu-button:hover,
+.bms-popup-background-dark .quick-toggle-has-menu .quick-toggle-menu-button:hover {
+	background-color: rgba(255, 255, 255, 0.16) !important;
+	color: #ffffff !important;
+}
+
+.quick-toggle-has-menu .quick-toggle-separator,
+.bms-popup-background-transparent .quick-toggle-has-menu .quick-toggle-separator,
+.bms-popup-background-dark .quick-toggle-has-menu .quick-toggle-separator {
+	width: 1px;
+	background-color: rgba(255, 255, 255, 0.14) !important;
+}
+
+/* UNIFIED Active / Pressed Color (#2B85FF) across ALL toggles, split arrows, sliders, and Blur-My-Shell */
+.quick-toggle:checked,
+.quick-menu-toggle .quick-toggle:checked,
+.quick-menu-toggle .quick-toggle-arrow:checked,
+.quick-toggle-has-menu .quick-toggle:checked,
+.quick-toggle-has-menu .quick-toggle-menu-button:checked,
+.bms-popup-background-transparent .quick-toggle:checked,
+.bms-popup-background-transparent .quick-toggle-has-menu .quick-toggle:checked,
+.bms-popup-background-transparent .quick-toggle-has-menu .quick-toggle-menu-button:checked,
+.bms-popup-background-dark .quick-toggle:checked,
+.bms-popup-background-dark .quick-toggle-has-menu .quick-toggle:checked,
+.bms-popup-background-dark .quick-toggle-has-menu .quick-toggle-menu-button:checked,
+.bms-popup-background-light .quick-toggle:checked,
+.bms-popup-background-light .quick-toggle-has-menu .quick-toggle-menu-button:checked {
+	background-color: #2B85FF !important;
+	color: #ffffff !important;
+	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.16) !important;
+}
+
+.quick-toggle:checked:hover,
+.quick-toggle:hover:checked,
+.quick-menu-toggle .quick-toggle:checked:hover,
+.quick-menu-toggle .quick-toggle-arrow:checked:hover,
+.quick-toggle-has-menu .quick-toggle:checked:hover,
+.quick-toggle-has-menu .quick-toggle-menu-button:checked:hover,
+.bms-popup-background-transparent .quick-toggle:checked:hover,
+.bms-popup-background-transparent .quick-toggle:hover:checked,
+.bms-popup-background-transparent .quick-toggle-has-menu .quick-toggle-menu-button:checked:hover,
+.bms-popup-background-dark .quick-toggle:checked:hover,
+.bms-popup-background-dark .quick-toggle-has-menu .quick-toggle-menu-button:checked:hover {
+	background-color: #4A9BFF !important;
+	color: #ffffff !important;
+}
+
+.quick-toggle-has-menu:checked .quick-toggle-separator,
+.bms-popup-background-transparent .quick-toggle-has-menu:checked .quick-toggle-separator,
+.bms-popup-background-dark .quick-toggle-has-menu:checked .quick-toggle-separator {
+	background-color: rgba(255, 255, 255, 0.24) !important;
+}
+
+/* Expanded Quick Toggle Submenu */
+.quick-toggle-menu,
+.bms-popup-background-transparent .quick-toggle-menu,
+.bms-popup-background-dark .quick-toggle-menu {
+	background-color: rgba(26, 30, 40, 0.96) !important;
+	border: 1px solid rgba(255, 255, 255, 0.10) !important;
+	border-radius: 22px !important;
+	color: #f4f7fc !important;
+}
+
+.quick-toggle-menu .header .icon.active {
+	background-color: #2B85FF !important;
+	color: #ffffff !important;
+}
+
+/* HyperOS 3 / 4 Notification Shade & Media Player Cards */
+.message-list .message,
+.popup-menu-content .message,
+.media-message {
+	background-color: rgba(38, 43, 55, 0.88);
+	border: 1px solid rgba(255, 255, 255, 0.09);
+	border-radius: 20px;
+	box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.22);
+	color: #f4f7fc;
+}
+
+.message-list .message:hover,
+.popup-menu-content .message:hover,
+.media-message:hover {
+	background-color: rgba(48, 55, 70, 0.92);
+	border-color: rgba(255, 255, 255, 0.14);
+}
+
+.notification-banner {
+	background-color: rgba(24, 28, 36, 0.95);
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	border-radius: 22px;
+	box-shadow: 0 10px 28px 0 rgba(0, 0, 0, 0.42);
+}
+
+.message-list-clear-button {
+	padding: 6px 18px;
+	border-radius: 999px;
+	background-color: rgba(255, 255, 255, 0.12);
+	color: #f4f7fc;
+	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.message-list-clear-button:hover {
+	background-color: rgba(255, 255, 255, 0.19);
+}
+
+.message-list-clear-button:insensitive {
+	background-color: rgba(255, 255, 255, 0.05);
+	color: rgba(244, 247, 252, 0.42);
+}
+
+/* Calendar & Widgets in Date Menu */
+.calendar,
+.events-button,
+.world-clocks-button,
+.weather-button {
+	background-color: rgba(36, 41, 52, 0.84);
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	border-radius: 18px;
+}
+
+.calendar-today,
+.calendar-today:selected {
+	background-color: #2B85FF !important;
+	color: #ffffff !important;
+	border-radius: 999px;
 }

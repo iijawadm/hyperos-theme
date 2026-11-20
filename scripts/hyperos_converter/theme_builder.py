@@ -60,8 +60,11 @@ def discover_populated_dirs(theme_root: Path) -> list[tuple[str, int, str, str]]
             continue
         name = size_dir.name
         is_scalable = name == "scalable"
+        is_symbolic = name == "symbolic"
         if is_scalable:
-            size_val = 128
+            size_val = 64
+        elif is_symbolic:
+            size_val = 16
         elif "x" in name:
             parts = name.split("x", 1)
             if not (parts[0].isdigit() and parts[1].isdigit() and parts[0] == parts[1]):
@@ -83,7 +86,7 @@ def discover_populated_dirs(theme_root: Path) -> list[tuple[str, int, str, str]]
             if not has_entries:
                 continue
             rel = f"{name}/{ctx_key}"
-            if is_scalable:
+            if is_scalable or is_symbolic:
                 dir_type = "Scalable"
             elif size_val >= 256:
                 dir_type = "Scalable"
@@ -91,8 +94,14 @@ def discover_populated_dirs(theme_root: Path) -> list[tuple[str, int, str, str]]
                 dir_type = "Fixed"
             populated.append((rel, size_val, CONTEXT_MAP[ctx_key], dir_type))
 
-    # Sort nicely: scalable first, then numeric sizes ascending
-    populated.sort(key=lambda item: (0 if item[0].startswith("scalable/") else 1, item[1], item[0]))
+    # Sort nicely: scalable first, symbolic second, then numeric sizes ascending
+    populated.sort(
+        key=lambda item: (
+            0 if item[0].startswith("scalable/") else (1 if item[0].startswith("symbolic/") else 2),
+            item[1],
+            item[0],
+        )
+    )
     return populated
 
 
@@ -119,7 +128,7 @@ def generate_index_theme(theme_root: Path, dry_run: bool = False) -> Path:
         lines.append(f"Context={ctx_label}")
         lines.append(f"Type={dir_type}")
         if dir_type == "Scalable":
-            if rel.startswith("scalable/"):
+            if rel.startswith(("scalable/", "symbolic/")):
                 lines.append("MinSize=16")
                 lines.append("MaxSize=512")
             else:

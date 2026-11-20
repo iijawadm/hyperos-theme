@@ -6,7 +6,7 @@
 
 | License / Provenance Status | Scanned Files | Action Required |
 | --- | ---: | --- |
-| `original_author` (Jawad's original artwork in `sources/original/`) | 0 | Safe under repository license chosen by author |
+| `original_author` (Jawad's original artwork in `sources/original/`) | 23 | Safe under repository license chosen by author |
 | `unverified_third_party` (`hyperos3-icons/` & `sources/android/`) | 302 | **Flagged**: Verify original creator & redistribution permission before public release |
 
 ## Embedded Android XML Theme Metadata Found

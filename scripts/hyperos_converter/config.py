@@ -16,6 +16,7 @@ STATUS_RASTER_SIZES = (16, 24, 32, 48, 64)
 CONTEXT_MAP = {
     "apps": "Applications",
     "actions": "Actions",
+    "animations": "Animations",
     "devices": "Devices",
     "places": "Places",
     "status": "Status",

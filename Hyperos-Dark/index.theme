@@ -1,13 +1,13 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
 Name=Hyperos-Dark
-Comment=A xiomi hyper os ui  like Gtk+ theme based on Elegant Design
+Comment=A Xiaomi HyperOS 3 / 4 inspired dark GTK and GNOME Shell theme
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=hyperos-Dark
-MetacityTheme=hyperos-Dark
-IconTheme=hyperos-Dark
-CursorTheme=hyperos-cursors
+GtkTheme=Hyperos-Dark
+MetacityTheme=Hyperos-Dark
+IconTheme=HyperOS-Icons
+CursorTheme=Adwaita
 ButtonLayout=close,minimize,maximize:menu
 

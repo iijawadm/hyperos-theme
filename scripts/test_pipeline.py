@@ -19,7 +19,7 @@ from hyperos_converter.mapper import map_assets
 from hyperos_converter.metadata import scan_android_metadata
 from hyperos_converter.scanner import scan_sources
 from hyperos_converter.theme_builder import create_alias_symlinks, generate_index_theme
-from hyperos_converter.validator import validate_theme
+from hyperos_converter.validator import validate_gnome_shell_css, validate_theme
 
 
 def run_tests() -> None:
@@ -117,6 +117,17 @@ def run_tests() -> None:
         # Run full Freedesktop validator
         val = validate_theme(out_theme)
         assert val.passed, f"Validation failed: {val.errors}"
+
+        # Verify GNOME Shell CSS passes St CSS transparency/shorthand checks
+        css_ok, css_errors = validate_gnome_shell_css(REPO_ROOT / "Hyperos-Dark" / "gnome-shell" / "gnome-shell.css")
+        assert css_ok, f"GNOME Shell CSS validation failed: {css_errors}"
+
+        # Verify built theme has HyperOS 3/4 vector folder + inode-directory alias (not broken blank squircle)
+        built_folder = REPO_ROOT / "HyperOS-Icons" / "scalable" / "places" / "folder.svg"
+        built_dir_alias = REPO_ROOT / "HyperOS-Icons" / "scalable" / "places" / "inode-directory.svg"
+        assert built_folder.is_file(), "Missing HyperOS 3/4 scalable/places/folder.svg"
+        assert built_dir_alias.is_symlink(), "Missing scalable/places/inode-directory.svg alias"
+        assert not (REPO_ROOT / "HyperOS-Icons" / "128x128" / "places" / "folder.png").exists(), "Broken Android squircle folder.png must not exist"
 
         # Test install.sh and uninstall.sh with --prefix
         install_stage = tmp_path / "stage_icons"

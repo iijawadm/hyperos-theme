@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="backGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFB938"/>
+      <stop offset="100%" stop-color="#E67E17"/>
+    </linearGradient>
+    <linearGradient id="frontGrad" x1="15%" y1="0%" x2="85%" y2="100%">
+      <stop offset="0%" stop-color="#FFD05B"/>
+      <stop offset="52%" stop-color="#FFA229"/>
+      <stop offset="100%" stop-color="#F07B16"/>
+    </linearGradient>
+    <linearGradient id="glassSheen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.34"/>
+      <stop offset="42%" stop-color="#FFFFFF" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.06"/>
+    </linearGradient>
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="2" stdDeviation="1.8" flood-color="#000000" flood-opacity="0.24"/>
+    </filter>
+  </defs>
+  <g filter="url(#dropShadow)">
+    <!-- Back plate with rounded HyperOS tab -->
+    <path d="M 11.5,10.5 H 24.8 C 27.2,10.5 29.0,11.6 30.6,13.6 L 32.2,15.5 H 52.5 C 56.2,15.5 58.8,18.1 58.8,21.8 V 48.0 C 58.8,52.4 55.6,55.5 51.2,55.5 H 12.8 C 8.4,55.5 5.2,52.4 5.2,48.0 V 16.8 C 5.2,13.1 7.8,10.5 11.5,10.5 Z" fill="url(#backGrad)"/>
+    <!-- Subtle inner sheet / HyperOS depth layer -->
+    <rect x="11" y="16" width="42" height="14" rx="4" fill="#FFFFFF" fill-opacity="0.82"/>
+    <!-- Front rounded squircle flap -->
+    <path d="M 11.5,24.5 H 52.5 C 56.6,24.5 59.5,27.4 59.5,31.5 L 58.2,49.0 C 58.0,53.2 54.8,56.0 50.6,56.0 H 13.4 C 9.2,56.0 6.0,53.2 5.8,49.0 L 4.5,31.5 C 4.5,27.4 7.4,24.5 11.5,24.5 Z" fill="url(#frontGrad)"/>
+    <!-- Frosted specular sheen -->
+    <path d="M 11.5,24.5 H 52.5 C 56.6,24.5 59.5,27.4 59.5,31.5 L 58.2,49.0 C 58.0,53.2 54.8,56.0 50.6,56.0 H 13.4 C 9.2,56.0 6.0,53.2 5.8,49.0 L 4.5,31.5 C 4.5,27.4 7.4,24.5 11.5,24.5 Z" fill="url(#glassSheen)"/>
+    <!-- Crisp top rim highlight -->
+    <path d="M 11.5,25.1 H 52.5" stroke="#FFFFFF" stroke-opacity="0.45" stroke-width="1.1" stroke-linecap="round" fill="none"/>
+  </g>
+  
+</svg>

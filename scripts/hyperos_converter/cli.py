@@ -10,12 +10,13 @@ from pathlib import Path
 from .config import THEME_DIR_NAME, default_source_specs
 from .converter import convert_decision
 from .gallery import generate_preview_gallery
+from .legacy_merger import merge_legacy_fallback
 from .mapper import map_assets
 from .metadata import scan_android_metadata, scan_linux_desktop_entries
 from .reporter import write_reports
 from .scanner import cleanup_temp_dir, scan_sources
 from .theme_builder import create_alias_symlinks, generate_index_theme, update_icon_cache
-from .validator import validate_theme
+from .validator import validate_gnome_shell_css, validate_theme
 
 
 def cmd_build(args: argparse.Namespace) -> int:
@@ -82,10 +83,23 @@ def cmd_build(args: argparse.Namespace) -> int:
             if idx % 20 == 0 or idx == len(mapped):
                 print(f"      Progress: {idx}/{len(mapped)} icons ({total_out} output files)")
 
-        print("[5/7] Creating alias symlinks & generating Freedesktop index.theme...")
+        print("[5/8] Creating alias symlinks...")
         symlink_count = create_alias_symlinks(decisions, theme_root, dry_run=args.dry_run)
+        print(f"      Created {symlink_count} alias symlinks.")
+
+        legacy_dir = repo_root / "hyperos icons"
+        if not args.no_legacy_merge and legacy_dir.is_dir():
+            print("[6/8] Merging missing fallback icons from legacy 'hyperos icons/' (new icons keep priority)...")
+            merge_stats = merge_legacy_fallback(legacy_dir, theme_root, decisions, dry_run=args.dry_run)
+            print(
+                f"      Merged {merge_stats['files_merged']} files + {merge_stats['symlinks_merged']} symlinks "
+                f"(protected {merge_stats['skipped_protected']} new icons, skipped {merge_stats['skipped_invalid']} invalid/legacy wrappers)."
+            )
+        else:
+            print("[6/8] Skipped legacy fallback merge.")
+
         index_path = generate_index_theme(theme_root, dry_run=args.dry_run)
-        print(f"      Created {symlink_count} alias symlinks and {index_path.name}.")
+        print(f"      Generated {index_path.name}.")
 
         if not args.dry_run:
             cache_ok, cache_msg = update_icon_cache(theme_root)
@@ -93,7 +107,7 @@ def cmd_build(args: argparse.Namespace) -> int:
             if not cache_ok:
                 return 1
 
-        print("[6/7] Generating reports (conversion, unresolved, duplicates, licensing)...")
+        print("[7/8] Generating reports (conversion, unresolved, duplicates, licensing)...")
         if not args.dry_run:
             report_paths = write_reports(
                 reports_dir, decisions, exact_dups, visual_dups, android_meta, desktop_apps
@@ -102,13 +116,13 @@ def cmd_build(args: argparse.Namespace) -> int:
                 print(f"      Wrote {path.relative_to(repo_root)}")
 
         if not args.skip_gallery and not args.dry_run:
-            print("[7/7] Generating searchable HTML preview & comparison gallery...")
+            print("[8/8] Generating searchable HTML preview & comparison gallery...")
             gallery_path = generate_preview_gallery(
                 decisions, theme_root, reports_dir / "preview-gallery.html"
             )
             print(f"      Wrote {gallery_path.relative_to(repo_root)}")
         else:
-            print("[7/7] Skipped HTML preview gallery.")
+            print("[8/8] Skipped HTML preview gallery.")
 
         print("\nBuild complete.")
         return 0
@@ -139,6 +153,18 @@ def cmd_validate(args: argparse.Namespace) -> int:
         print("\nValidation FAILED.")
         return 1
 
+    # Also validate GNOME Shell CSS if Hyperos-Dark is present in repo
+    shell_css = repo_root / "Hyperos-Dark" / "gnome-shell" / "gnome-shell.css"
+    if shell_css.is_file():
+        css_ok, css_errors = validate_gnome_shell_css(shell_css)
+        if not css_ok:
+            print(f"\nGNOME Shell CSS Errors ({len(css_errors)}):")
+            for e in css_errors:
+                print(f"  [FAIL] {e}")
+            print("\nValidation FAILED.")
+            return 1
+        print("  - gnome_shell_css_check: PASSED (0 St CSS transparency/shorthand errors)")
+
     print("\nValidation PASSED with 0 errors.")
     return 0
 
@@ -158,6 +184,7 @@ def build_parser() -> argparse.ArgumentParser:
     p_build.add_argument("--dry-run", action="store_true", help="Simulate conversion without writing files")
     p_build.add_argument("--skip-gallery", action="store_true", help="Skip generating HTML preview gallery")
     p_build.add_argument("--no-system-desktops", action="store_true", help="Do not scan host Linux .desktop entries")
+    p_build.add_argument("--no-legacy-merge", action="store_true", help="Do not merge fallback icons from legacy 'hyperos icons/'")
     p_build.set_defaults(func=cmd_build)
 
     p_val = sub.add_parser("validate", help="Validate generated Linux icon theme")

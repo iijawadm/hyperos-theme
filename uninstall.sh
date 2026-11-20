@@ -63,8 +63,8 @@ case "$MODE" in
     ;;
 esac
 
-# If GNOME is currently using HyperOS-Icons, safely reset to Adwaita
-if command -v gsettings >/dev/null 2>&1; then
+# If GNOME is currently using HyperOS-Icons, safely reset to Adwaita (skip for --prefix staging tests)
+if [[ "$MODE" != "custom" ]] && command -v gsettings >/dev/null 2>&1; then
   current="$(gsettings get org.gnome.desktop.interface icon-theme 2>/dev/null || true)"
   if [[ "$current" == "'$THEME_NAME'" ]]; then
     gsettings set org.gnome.desktop.interface icon-theme "Adwaita"

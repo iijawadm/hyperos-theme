@@ -1,31 +1,650 @@
 {
-  "generated_at": "2026-11-20T20:06:34Z",
+  "generated_at": "2026-11-20T21:23:45Z",
   "summary": {
-    "total_scanned_files": 302,
-    "mapped_primary_icons": 68,
+    "total_scanned_files": 325,
+    "mapped_primary_icons": 89,
     "merged_duplicates": 173,
-    "excluded_helpers": 3,
+    "excluded_helpers": 5,
     "unresolved": 58,
     "errors": 0,
-    "total_output_files": 505,
-    "total_alias_symlinks": 1220,
+    "total_output_files": 512,
+    "total_alias_symlinks": 1236,
     "exact_duplicate_groups": 121,
     "visual_similar_pairs": 3,
     "installed_linux_desktop_entries_scanned": 207,
     "by_context": {
-      "apps": 51,
-      "places": 3,
+      "mimes": 8,
+      "places": 15,
+      "apps": 52,
       "devices": 1,
       "status": 13
     },
     "by_source": {
+      "original": 23,
       "hyperos3-icons": 302
     },
     "by_license_status": {
+      "original_author": 23,
       "unverified_third_party": 302
     }
   },
   "items": [
+    {
+      "source_path": "sources/original/mimes/application-pdf.svg",
+      "source_id": "original",
+      "provenance": "original",
+      "license_status": "original_author",
+      "stem": "application-pdf",
+      "format": "SVG",
+      "dimensions": "vector",
+      "has_alpha": true,
+      "sha256": "f0cbc0a7a5f3a2af",
+      "status": "mapped",
+      "method": "original_direct",
+      "confidence": "high",
+      "canonical_name": "application-pdf",
+      "context": "mimes",
+      "app_name": "application-pdf",
+      "aliases": [
+        "x-office-document"
+      ],
+      "matched_desktop_ids": [],
+      "output_files": [
+        "scalable/mimes/application-pdf.svg"
+      ],
+      "symlink_count": 1,
+      "reason": "Original HyperOS-inspired artwork preserved directly"
+    },
+    {
+      "source_path": "sources/original/mimes/application-x-executable.svg",
+      "source_id": "original",
+      "provenance": "original",
+      "license_status": "original_author",
+      "stem": "application-x-executable",
+      "format": "SVG",
+      "dimensions": "vector",
+      "has_alpha": true,
+      "sha256": "3b96ba35ee80fd4a",
+      "status": "mapped",
+      "method": "original_direct",
+      "confidence": "high",
+      "canonical_name": "application-x-executable",
+      "context": "mimes",
+      "app_name": "application-x-executable",
+      "aliases": [],
+      "matched_desktop_ids": [],
+      "output_files": [
+        "scalable/mimes/application-x-executable.svg"
+      ],
+      "symlink_count": 0,
+      "reason": "Original HyperOS-inspired artwork preserved directly"
+    },
+    {
+      "source_path": "sources/original/mimes/audio-x-generic.svg",
+      "source_id": "original",
+      "provenance": "original",
+      "license_status": "original_author",
+      "stem": "audio-x-generic",
+      "format": "SVG",
+      "dimensions": "vector",
+      "has_alpha": true,
+      "sha256": "d4fd55ece459f832",
+      "status": "mapped",
+      "method": "original_direct",
+      "confidence": "high",
+      "canonical_name": "audio-x-generic",
+      "context": "mimes",
+      "app_name": "audio-x-generic",
+      "aliases": [
+        "audio-mpeg",
+        "audio-flac",
+        "audio-ogg"
+      ],
+      "matched_desktop_ids": [],
+      "output_files": [
+        "scalable/mimes/audio-x-generic.svg"
+      ],
+      "symlink_count": 3,
+      "reason": "Original HyperOS-inspired artwork preserved directly"
+    },
+    {
+      "source_path": "sources/original/mimes/image-x-generic.svg",
+      "source_id": "original",
+      "provenance": "original",
+      "license_status": "original_author",
+      "stem": "image-x-generic",
+      "format": "SVG",
+      "dimensions": "vector",
+      "has_alpha": true,
+      "sha256": "51dbb46ca616bb7e",
+      "status": "mapped",
+      "method": "original_direct",
+      "confidence": "high",
+      "canonical_name": "image-x-generic",
+      "context": "mimes",
+      "app_name": "image-x-generic",
+      "aliases": [
+        "image-png",
+        "image-jpeg",
+        "image-webp",
+        "image-svg-xml"
+      ],
+      "matched_desktop_ids": [],
+      "output_files": [
+        "scalable/mimes/image-x-generic.svg"
+      ],
+      "symlink_count": 4,
+      "reason": "Original HyperOS-inspired artwork preserved directly"
+    },
+    {
+      "source_path": "sources/original/mimes/package-x-generic.svg",
+      "source_id": "original",
+      "provenance": "original",
+      "license_status": "original_author",
+      "stem": "package-x-generic",
+      "format": "SVG",
+      "dimensions": "vector",
+      "has_alpha": true,
+      "sha256": "7acb3db5d92957b9",
+      "status": "mapped",
+      "method": "original_direct",
+      "confidence": "high",
+      "canonical_name": "package-x-generic",
+      "context": "mimes",
+      "app_name": "package-x-generic",
+      "aliases": [
+        "application-zip",
+        "application-x-tar",
+        "application-x-compressed-tar",
+        "application-gzip",
+        "application-x-7z-compressed",
+        "application-x-rar"
+      ],
+      "matched_desktop_ids": [],
+      "output_files": [
+        "scalable/mimes/package-x-generic.svg"
+      ],
+      "symlink_count": 6,
+      "reason": "Original HyperOS-inspired artwork preserved directly"
+    },
+    {
+      "source_path": "sources/original/mimes/text-x-generic.svg",
+      "source_id": "original",
+      "provenance": "original",
+      "license_status": "original_author",
+      "stem": "text-x-generic",
+      "format": "SVG",
+      "dimensions": "vector",
+      "has_alpha": true,
+      "sha256": "306281cb44b80327",
+      "status": "mapped",
+      "method": "original_direct",
+      "confidence": "high",
+      "canonical_name": "text-x-generic",
+      "context": "mimes",
+      "app_name": "text-x-generic",
+      "aliases": [
+        "text-plain",
+        "text-markdown",
+        "application-x-zerosize"
+      ],
+      "matched_desktop_ids": [],
+      "output_files": [
+        "scalable/mimes/text-x-generic.svg"
+      ],
+      "symlink_count": 3,
+      "reason": "Original HyperOS-inspired artwork preserved directly"
+    },
+    {
+      "source_path": "sources/original/mimes/text-x-script.svg",
+      "source_id": "original",
+      "provenance": "original",
+      "license_status": "original_author",
+      "stem": "text-x-script",
+      "format": "SVG",
+      "dimensions": "vector",
+      "has_alpha": true,
+      "sha256": "6fd15dcb04fb85bc",
+      "status": "mapped",
+      "method": "original_direct",
+      "confidence": "high",
+      "canonical_name": "text-x-script",
+      "context": "mimes",
+      "app_name": "text-x-script",
+      "aliases": [
+        "text-x-python",
+        "application-x-shellscript",
+        "application-json",
+        "text-x-csrc",
+        "text-x-chdr",
+        "application-javascript"
+      ],
+      "matched_desktop_ids": [],
+      "output_files": [
+        "scalable/mimes/text-x-script.svg"
+      ],
+      "symlink_count": 6,
+      "reason": "Original HyperOS-inspired artwork preserved directly"
+    },
+    {
+      "source_path": "sources/original/mimes/video-x-generic.svg",
+      "source_id": "original",
+      "provenance": "original",
+      "license_status": "original_author",
+      "stem": "video-x-generic",
+      "format": "SVG",
+      "dimensions": "vector",
+      "has_alpha": true,
+      "sha256": "a9efd56661ea319d",
+      "status": "mapped",
+      "method": "original_direct",
+      "confidence": "high",
+      "canonical_name": "video-x-generic",
+      "context": "mimes",
+      "app_name": "video-x-generic",
+      "aliases": [
+        "video-mp4",
+        "video-x-matroska",
+        "video-webm"
+      ],
+      "matched_desktop_ids": [],
+      "output_files": [
+        "scalable/mimes/video-x-generic.svg"
+      ],
+      "symlink_count": 3,
+      "reason": "Original HyperOS-inspired artwork preserved directly"
+    },
+    {
+      "source_path": "sources/original/places/folder-bookmarks.svg",
+      "source_id": "original",
+      "provenance": "original",
+      "license_status": "original_author",
+      "stem": "folder-bookmarks",
+      "format": "SVG",
+      "dimensions": "vector",
+      "has_alpha": true,
+      "sha256": "dc3b473a31c1325c",
+      "status": "mapped",
+      "method": "original_direct",
+      "confidence": "high",
+      "canonical_name": "folder-bookmarks",
+      "context": "places",
+      "app_name": "folder-bookmarks",
+      "aliases": [
+        "user-bookmarks",
+        "folder-favorites"
+      ],
+      "matched_desktop_ids": [],
+      "output_files": [
+        "scalable/places/folder-bookmarks.svg"
+      ],
+      "symlink_count": 2,
+      "reason": "Original HyperOS-inspired artwork preserved directly"
+    },
+    {
+      "source_path": "sources/original/places/folder-desktop.svg",
+      "source_id": "original",
+      "provenance": "original",
+      "license_status": "original_author",
+      "stem": "folder-desktop",
+      "format": "SVG",
+      "dimensions": "vector",
+      "has_alpha": true,
+      "sha256": "9fb4635ef40d5bcb",
+      "status": "mapped",
+      "method": "original_direct",
+      "confidence": "high",
+      "canonical_name": "folder-desktop",
+      "context": "places",
+      "app_name": "folder-desktop",
+      "aliases": [
+        "user-desktop",
+        "desktop"
+      ],
+      "matched_desktop_ids": [],
+      "output_files": [
+        "scalable/places/folder-desktop.svg"
+      ],
+      "symlink_count": 2,
+      "reason": "Original HyperOS-inspired artwork preserved directly"
+    },
+    {
+      "source_path": "sources/original/places/folder-documents.svg",
+      "source_id": "original",
+      "provenance": "original",
+      "license_status": "original_author",
+      "stem": "folder-documents",
+      "format": "SVG",
+      "dimensions": "vector",
+      "has_alpha": true,
+      "sha256": "323e6c2375c3e44c",
+      "status": "mapped",
+      "method": "original_direct",
+      "confidence": "high",
+      "canonical_name": "folder-documents",
+      "context": "places",
+      "app_name": "folder-documents",
+      "aliases": [
+        "folder-document"
+      ],
+      "matched_desktop_ids": [],
+      "output_files": [
+        "scalable/places/folder-documents.svg"
+      ],
+      "symlink_count": 1,
+      "reason": "Original HyperOS-inspired artwork preserved directly"
+    },
+    {
+      "source_path": "sources/original/places/folder-download.svg",
+      "source_id": "original",
+      "provenance": "original",
+      "license_status": "original_author",
+      "stem": "folder-download",
+      "format": "SVG",
+      "dimensions": "vector",
+      "has_alpha": true,
+      "sha256": "7758dee7e116b521",
+      "status": "mapped",
+      "method": "original_direct",
+      "confidence": "high",
+      "canonical_name": "folder-download",
+      "context": "places",
+      "app_name": "folder-download",
+      "aliases": [
+        "folder-downloads",
+        "user-downloads"
+      ],
+      "matched_desktop_ids": [],
+      "output_files": [
+        "scalable/places/folder-download.svg"
+      ],
+      "symlink_count": 2,
+      "reason": "Original HyperOS-inspired artwork preserved directly"
+    },
+    {
+      "source_path": "sources/original/places/folder-drag-accept.svg",
+      "source_id": "original",
+      "provenance": "original",
+      "license_status": "original_author",
+      "stem": "folder-drag-accept",
+      "format": "SVG",
+      "dimensions": "vector",
+      "has_alpha": true,
+      "sha256": "8458f42c366afb6e",
+      "status": "mapped",
+      "method": "original_direct",
+      "confidence": "high",
+      "canonical_name": "folder-drag-accept",
+      "context": "places",
+      "app_name": "folder-drag-accept",
+      "aliases": [],
+      "matched_desktop_ids": [],
+      "output_files": [
+        "scalable/places/folder-drag-accept.svg"
+      ],
+      "symlink_count": 0,
+      "reason": "Original HyperOS-inspired artwork preserved directly"
+    },
+    {
+      "source_path": "sources/original/places/folder-home.svg",
+      "source_id": "original",
+      "provenance": "original",
+      "license_status": "original_author",
+      "stem": "folder-home",
+      "format": "SVG",
+      "dimensions": "vector",
+      "has_alpha": true,
+      "sha256": "5b197ac99218e99f",
+      "status": "mapped",
+      "method": "original_direct",
+      "confidence": "high",
+      "canonical_name": "folder-home",
+      "context": "places",
+      "app_name": "folder-home",
+      "aliases": [
+        "user-home",
+        "folder_home"
+      ],
+      "matched_desktop_ids": [],
+      "output_files": [
+        "scalable/places/folder-home.svg"
+      ],
+      "symlink_count": 2,
+      "reason": "Original HyperOS-inspired artwork preserved directly"
+    },
+    {
+      "source_path": "sources/original/places/folder-music.svg",
+      "source_id": "original",
+      "provenance": "original",
+      "license_status": "original_author",
+      "stem": "folder-music",
+      "format": "SVG",
+      "dimensions": "vector",
+      "has_alpha": true,
+      "sha256": "a514b848f68203dd",
+      "status": "mapped",
+      "method": "original_direct",
+      "confidence": "high",
+      "canonical_name": "folder-music",
+      "context": "places",
+      "app_name": "folder-music",
+      "aliases": [],
+      "matched_desktop_ids": [],
+      "output_files": [
+        "scalable/places/folder-music.svg"
+      ],
+      "symlink_count": 0,
+      "reason": "Original HyperOS-inspired artwork preserved directly"
+    },
+    {
+      "source_path": "sources/original/places/folder-open.svg",
+      "source_id": "original",
+      "provenance": "original",
+      "license_status": "original_author",
+      "stem": "folder-open",
+      "format": "SVG",
+      "dimensions": "vector",
+      "has_alpha": true,
+      "sha256": "a53e8eeae3f7e506",
+      "status": "mapped",
+      "method": "original_direct",
+      "confidence": "high",
+      "canonical_name": "folder-open",
+      "context": "places",
+      "app_name": "folder-open",
+      "aliases": [
+        "folder_open",
+        "document-open"
+      ],
+      "matched_desktop_ids": [],
+      "output_files": [
+        "scalable/places/folder-open.svg"
+      ],
+      "symlink_count": 2,
+      "reason": "Original HyperOS-inspired artwork preserved directly"
+    },
+    {
+      "source_path": "sources/original/places/folder-pictures.svg",
+      "source_id": "original",
+      "provenance": "original",
+      "license_status": "original_author",
+      "stem": "folder-pictures",
+      "format": "SVG",
+      "dimensions": "vector",
+      "has_alpha": true,
+      "sha256": "fbe43158c24f06d3",
+      "status": "mapped",
+      "method": "original_direct",
+      "confidence": "high",
+      "canonical_name": "folder-pictures",
+      "context": "places",
+      "app_name": "folder-pictures",
+      "aliases": [
+        "folder-images",
+        "folder-photos"
+      ],
+      "matched_desktop_ids": [],
+      "output_files": [
+        "scalable/places/folder-pictures.svg"
+      ],
+      "symlink_count": 2,
+      "reason": "Original HyperOS-inspired artwork preserved directly"
+    },
+    {
+      "source_path": "sources/original/places/folder-publicshare.svg",
+      "source_id": "original",
+      "provenance": "original",
+      "license_status": "original_author",
+      "stem": "folder-publicshare",
+      "format": "SVG",
+      "dimensions": "vector",
+      "has_alpha": true,
+      "sha256": "8a8ce37fe67ebebe",
+      "status": "mapped",
+      "method": "original_direct",
+      "confidence": "high",
+      "canonical_name": "folder-publicshare",
+      "context": "places",
+      "app_name": "folder-publicshare",
+      "aliases": [],
+      "matched_desktop_ids": [],
+      "output_files": [
+        "scalable/places/folder-publicshare.svg"
+      ],
+      "symlink_count": 0,
+      "reason": "Original HyperOS-inspired artwork preserved directly"
+    },
+    {
+      "source_path": "sources/original/places/folder-recent.svg",
+      "source_id": "original",
+      "provenance": "original",
+      "license_status": "original_author",
+      "stem": "folder-recent",
+      "format": "SVG",
+      "dimensions": "vector",
+      "has_alpha": true,
+      "sha256": "778f6dd1a1bcbb34",
+      "status": "mapped",
+      "method": "original_direct",
+      "confidence": "high",
+      "canonical_name": "folder-recent",
+      "context": "places",
+      "app_name": "folder-recent",
+      "aliases": [],
+      "matched_desktop_ids": [],
+      "output_files": [
+        "scalable/places/folder-recent.svg"
+      ],
+      "symlink_count": 0,
+      "reason": "Original HyperOS-inspired artwork preserved directly"
+    },
+    {
+      "source_path": "sources/original/places/folder-remote.svg",
+      "source_id": "original",
+      "provenance": "original",
+      "license_status": "original_author",
+      "stem": "folder-remote",
+      "format": "SVG",
+      "dimensions": "vector",
+      "has_alpha": true,
+      "sha256": "5d4ea7d6494852c8",
+      "status": "mapped",
+      "method": "original_direct",
+      "confidence": "high",
+      "canonical_name": "folder-remote",
+      "context": "places",
+      "app_name": "folder-remote",
+      "aliases": [
+        "network-workgroup",
+        "network-server",
+        "folder-network"
+      ],
+      "matched_desktop_ids": [],
+      "output_files": [
+        "scalable/places/folder-remote.svg"
+      ],
+      "symlink_count": 3,
+      "reason": "Original HyperOS-inspired artwork preserved directly"
+    },
+    {
+      "source_path": "sources/original/places/folder-templates.svg",
+      "source_id": "original",
+      "provenance": "original",
+      "license_status": "original_author",
+      "stem": "folder-templates",
+      "format": "SVG",
+      "dimensions": "vector",
+      "has_alpha": true,
+      "sha256": "9ce5bbd00dc27ac0",
+      "status": "mapped",
+      "method": "original_direct",
+      "confidence": "high",
+      "canonical_name": "folder-templates",
+      "context": "places",
+      "app_name": "folder-templates",
+      "aliases": [],
+      "matched_desktop_ids": [],
+      "output_files": [
+        "scalable/places/folder-templates.svg"
+      ],
+      "symlink_count": 0,
+      "reason": "Original HyperOS-inspired artwork preserved directly"
+    },
+    {
+      "source_path": "sources/original/places/folder-videos.svg",
+      "source_id": "original",
+      "provenance": "original",
+      "license_status": "original_author",
+      "stem": "folder-videos",
+      "format": "SVG",
+      "dimensions": "vector",
+      "has_alpha": true,
+      "sha256": "4a43fbcf86e17e2e",
+      "status": "mapped",
+      "method": "original_direct",
+      "confidence": "high",
+      "canonical_name": "folder-videos",
+      "context": "places",
+      "app_name": "folder-videos",
+      "aliases": [],
+      "matched_desktop_ids": [],
+      "output_files": [
+        "scalable/places/folder-videos.svg"
+      ],
+      "symlink_count": 0,
+      "reason": "Original HyperOS-inspired artwork preserved directly"
+    },
+    {
+      "source_path": "sources/original/places/folder.svg",
+      "source_id": "original",
+      "provenance": "original",
+      "license_status": "original_author",
+      "stem": "folder",
+      "format": "SVG",
+      "dimensions": "vector",
+      "has_alpha": true,
+      "sha256": "f716ce6f8b7c2f22",
+      "status": "mapped",
+      "method": "original_direct",
+      "confidence": "high",
+      "canonical_name": "folder",
+      "context": "places",
+      "app_name": "folder",
+      "aliases": [
+        "inode-directory",
+        "folder-blue",
+        "folder-orange",
+        "folder-yellow",
+        "folder-saved-search",
+        "stock_folder"
+      ],
+      "matched_desktop_ids": [],
+      "output_files": [
+        "scalable/places/folder.svg"
+      ],
+      "symlink_count": 6,
+      "reason": "Original HyperOS-inspired artwork preserved directly"
+    },
     {
       "source_path": "hyperos3-icons/com.ss.android.ugc.aweme.png",
       "source_id": "hyperos3-icons",
@@ -710,26 +1329,25 @@
       "status": "mapped",
       "method": "curated_exact",
       "confidence": "high",
-      "canonical_name": "folder-download",
-      "context": "places",
-      "app_name": "Downloads",
+      "canonical_name": "downloads-manager",
+      "context": "apps",
+      "app_name": "Downloads Manager",
       "aliases": [
-        "folder-downloads",
-        "user-downloads"
+        "download-manager"
       ],
       "matched_desktop_ids": [],
       "output_files": [
-        "16x16/places/folder-download.png",
-        "24x24/places/folder-download.png",
-        "32x32/places/folder-download.png",
-        "48x48/places/folder-download.png",
-        "64x64/places/folder-download.png",
-        "96x96/places/folder-download.png",
-        "128x128/places/folder-download.png",
-        "256x256/places/folder-download.png"
+        "16x16/apps/downloads-manager.png",
+        "24x24/apps/downloads-manager.png",
+        "32x32/apps/downloads-manager.png",
+        "48x48/apps/downloads-manager.png",
+        "64x64/apps/downloads-manager.png",
+        "96x96/apps/downloads-manager.png",
+        "128x128/apps/downloads-manager.png",
+        "256x256/apps/downloads-manager.png"
       ],
-      "symlink_count": 16,
-      "reason": "Verified Android-to-Linux mapping (com.android.providers.downloads -> places/folder-download)"
+      "symlink_count": 8,
+      "reason": "Verified Android-to-Linux mapping (com.android.providers.downloads -> apps/downloads-manager)"
     },
     {
       "source_path": "hyperos3-icons/com.android.providers.downloads.ui.png",
@@ -744,16 +1362,14 @@
       "status": "merged_duplicate",
       "method": "curated_exact",
       "confidence": "high",
-      "canonical_name": "folder-download",
-      "context": "places",
+      "canonical_name": "downloads-manager",
+      "context": "apps",
       "app_name": "Downloads UI",
-      "aliases": [
-        "folder-downloads"
-      ],
+      "aliases": [],
       "matched_desktop_ids": [],
       "output_files": [],
       "symlink_count": 0,
-      "reason": "Mapped to places/folder-download, which is already provided by hyperos3-icons/com.android.providers.downloads.png"
+      "reason": "Mapped to apps/downloads-manager, which is already provided by hyperos3-icons/com.android.providers.downloads.png"
     },
     {
       "source_path": "hyperos3-icons/com.android.providers.telephony.png",
@@ -3615,29 +4231,17 @@
       "dimensions": "256x256",
       "has_alpha": true,
       "sha256": "a2a333ac812a1032",
-      "status": "mapped",
-      "method": "curated_exact",
+      "status": "excluded",
+      "method": "helper_excluded",
       "confidence": "high",
-      "canonical_name": "folder",
-      "context": "places",
-      "app_name": "Folder",
-      "aliases": [
-        "inode-directory",
-        "folder-blue"
-      ],
+      "canonical_name": null,
+      "context": null,
+      "app_name": null,
+      "aliases": [],
       "matched_desktop_ids": [],
-      "output_files": [
-        "16x16/places/folder.png",
-        "24x24/places/folder.png",
-        "32x32/places/folder.png",
-        "48x48/places/folder.png",
-        "64x64/places/folder.png",
-        "96x96/places/folder.png",
-        "128x128/places/folder.png",
-        "256x256/places/folder.png"
-      ],
-      "symlink_count": 16,
-      "reason": "Verified Android-to-Linux mapping (icon_folder -> places/folder)"
+      "output_files": [],
+      "symlink_count": 0,
+      "reason": "MIUI/HyperOS launcher home-screen folder backdrop squircle (not a Linux file manager folder icon; replaced by original HyperOS 3/4 vector folder)"
     },
     {
       "source_path": "hyperos3-icons/icon_folder_light.png",
@@ -3649,28 +4253,17 @@
       "dimensions": "256x256",
       "has_alpha": true,
       "sha256": "a2a333ac812a1032",
-      "status": "mapped",
-      "method": "curated_exact",
+      "status": "excluded",
+      "method": "helper_excluded",
       "confidence": "high",
-      "canonical_name": "folder-open",
-      "context": "places",
-      "app_name": "Folder (Light)",
-      "aliases": [
-        "folder-light"
-      ],
+      "canonical_name": null,
+      "context": null,
+      "app_name": null,
+      "aliases": [],
       "matched_desktop_ids": [],
-      "output_files": [
-        "16x16/places/folder-open.png",
-        "24x24/places/folder-open.png",
-        "32x32/places/folder-open.png",
-        "48x48/places/folder-open.png",
-        "64x64/places/folder-open.png",
-        "96x96/places/folder-open.png",
-        "128x128/places/folder-open.png",
-        "256x256/places/folder-open.png"
-      ],
-      "symlink_count": 8,
-      "reason": "Verified Android-to-Linux mapping (icon_folder_light -> places/folder-open)"
+      "output_files": [],
+      "symlink_count": 0,
+      "reason": "MIUI/HyperOS launcher home-screen folder backdrop squircle (not a Linux file manager folder icon; replaced by original HyperOS 3/4 vector folder)"
     },
     {
       "source_path": "hyperos3-icons/icon_mask.png",

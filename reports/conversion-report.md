@@ -1,17 +1,17 @@
 # Android-to-Linux Icon Conversion Report
 
-Generated: `2026-11-20T20:06:34Z`
+Generated: `2026-11-20T21:23:45Z`
 
 ## Summary
 
 | Metric | Count |
 | --- | ---: |
-| Total source icon files scanned | 302 |
-| Mapped primary Linux icons | 68 |
-| Generated icon image files (all sizes) | 505 |
-| Generated alias symlinks | 1220 |
+| Total source icon files scanned | 325 |
+| Mapped primary Linux icons | 89 |
+| Generated icon image files (all sizes) | 512 |
+| Generated alias symlinks | 1236 |
 | Merged exact/canonical duplicates | 173 |
-| Excluded theme-pack helper templates | 3 |
+| Excluded theme-pack helper templates | 5 |
 | Unresolved icons (not guessed) | 58 |
 | Unreadable / failed files | 0 |
 | Host Linux `.desktop` entries scanned | 207 |
@@ -20,9 +20,10 @@ Generated: `2026-11-20T20:06:34Z`
 
 | Context | Primary Icons |
 | --- | ---: |
-| `apps` | 51 |
+| `apps` | 52 |
 | `devices` | 1 |
-| `places` | 3 |
+| `mimes` | 8 |
+| `places` | 15 |
 | `status` | 13 |
 
 ## Mapped Icons Detail
@@ -41,6 +42,7 @@ Generated: `2026-11-20T20:06:34Z`
 | `hyperos3-icons/com.android.camera.png` | `apps/camera-photo` | `org.gnome.Snapshot`, `cheese`, `org.kde.kamoso`, `camera` | 256x256 | `curated_exact` | `org.gnome.Snapshot` |
 | `hyperos3-icons/com.miui.compass.png` | `apps/compass` | `marble` | 256x256 | `curated_exact` | — |
 | `hyperos3-icons/com.deepseek.chat.png` | `apps/deepseek` | `deepseek-chat` | 256x256 | `curated_exact` | — |
+| `hyperos3-icons/com.android.providers.downloads.png` | `apps/downloads-manager` | `download-manager` | 256x256 | `curated_exact` | — |
 | `hyperos3-icons/com.facebook.katana.png` | `apps/facebook` | `web-facebook` | 256x256 | `curated_exact` | — |
 | `hyperos3-icons/com.facebook.orca.png` | `apps/facebook-messenger` | `messenger`, `caprine` | 256x256 | `curated_exact` | — |
 | `hyperos3-icons/com.xiaomi.smarthome.png` | `apps/home-assistant` | `smart-home` | 256x256 | `curated_exact` | — |
@@ -81,9 +83,29 @@ Generated: `2026-11-20T20:06:34Z`
 | `hyperos3-icons/com.android.contacts.png` | `apps/x-office-address-book` | `office-address-book`, `org.gnome.Contacts`, `kaddressbook`, `contacts` | 256x256 | `curated_exact` | `org.gnome.Contacts` |
 | `hyperos3-icons/com.android.calendar.png` | `apps/x-office-calendar` | `office-calendar`, `org.gnome.Calendar`, `korganizer`, `calendar` | 256x256 | `curated_exact` | `org.gnome.Calendar` |
 | `hyperos3-icons/com.mi.earphone.png` | `devices/audio-headphones` | `headphones` | 256x256 | `curated_exact` | — |
-| `hyperos3-icons/icon_folder.png` | `places/folder` | `inode-directory`, `folder-blue` | 256x256 | `curated_exact` | — |
-| `hyperos3-icons/com.android.providers.downloads.png` | `places/folder-download` | `folder-downloads`, `user-downloads` | 256x256 | `curated_exact` | — |
-| `hyperos3-icons/icon_folder_light.png` | `places/folder-open` | `folder-light` | 256x256 | `curated_exact` | — |
+| `sources/original/mimes/application-pdf.svg` | `mimes/application-pdf` | `x-office-document` | SVG | `original_direct` | — |
+| `sources/original/mimes/application-x-executable.svg` | `mimes/application-x-executable` | — | SVG | `original_direct` | — |
+| `sources/original/mimes/audio-x-generic.svg` | `mimes/audio-x-generic` | `audio-mpeg`, `audio-flac`, `audio-ogg` | SVG | `original_direct` | — |
+| `sources/original/mimes/image-x-generic.svg` | `mimes/image-x-generic` | `image-png`, `image-jpeg`, `image-webp`, `image-svg-xml` | SVG | `original_direct` | — |
+| `sources/original/mimes/package-x-generic.svg` | `mimes/package-x-generic` | `application-zip`, `application-x-tar`, `application-x-compressed-tar`, `application-gzip`, `application-x-7z-compressed` (+1) | SVG | `original_direct` | — |
+| `sources/original/mimes/text-x-generic.svg` | `mimes/text-x-generic` | `text-plain`, `text-markdown`, `application-x-zerosize` | SVG | `original_direct` | — |
+| `sources/original/mimes/text-x-script.svg` | `mimes/text-x-script` | `text-x-python`, `application-x-shellscript`, `application-json`, `text-x-csrc`, `text-x-chdr` (+1) | SVG | `original_direct` | — |
+| `sources/original/mimes/video-x-generic.svg` | `mimes/video-x-generic` | `video-mp4`, `video-x-matroska`, `video-webm` | SVG | `original_direct` | — |
+| `sources/original/places/folder.svg` | `places/folder` | `inode-directory`, `folder-blue`, `folder-orange`, `folder-yellow`, `folder-saved-search` (+1) | SVG | `original_direct` | — |
+| `sources/original/places/folder-bookmarks.svg` | `places/folder-bookmarks` | `user-bookmarks`, `folder-favorites` | SVG | `original_direct` | — |
+| `sources/original/places/folder-desktop.svg` | `places/folder-desktop` | `user-desktop`, `desktop` | SVG | `original_direct` | — |
+| `sources/original/places/folder-documents.svg` | `places/folder-documents` | `folder-document` | SVG | `original_direct` | — |
+| `sources/original/places/folder-download.svg` | `places/folder-download` | `folder-downloads`, `user-downloads` | SVG | `original_direct` | — |
+| `sources/original/places/folder-drag-accept.svg` | `places/folder-drag-accept` | — | SVG | `original_direct` | — |
+| `sources/original/places/folder-home.svg` | `places/folder-home` | `user-home`, `folder_home` | SVG | `original_direct` | — |
+| `sources/original/places/folder-music.svg` | `places/folder-music` | — | SVG | `original_direct` | — |
+| `sources/original/places/folder-open.svg` | `places/folder-open` | `folder_open`, `document-open` | SVG | `original_direct` | — |
+| `sources/original/places/folder-pictures.svg` | `places/folder-pictures` | `folder-images`, `folder-photos` | SVG | `original_direct` | — |
+| `sources/original/places/folder-publicshare.svg` | `places/folder-publicshare` | — | SVG | `original_direct` | — |
+| `sources/original/places/folder-recent.svg` | `places/folder-recent` | — | SVG | `original_direct` | — |
+| `sources/original/places/folder-remote.svg` | `places/folder-remote` | `network-workgroup`, `network-server`, `folder-network` | SVG | `original_direct` | — |
+| `sources/original/places/folder-templates.svg` | `places/folder-templates` | — | SVG | `original_direct` | — |
+| `sources/original/places/folder-videos.svg` | `places/folder-videos` | — | SVG | `original_direct` | — |
 | `hyperos3-icons/status_bar_toggle_flight_mode_off.png` | `status/airplane-mode-off` | — | 256x256 | `curated_exact` | — |
 | `hyperos3-icons/status_bar_toggle_flight_mode_on.png` | `status/airplane-mode-on` | `airplane-mode` | 256x256 | `curated_exact` | — |
 | `hyperos3-icons/status_bar_toggle_bluetooth_on.png` | `status/bluetooth-active` | `bluetooth` | 256x256 | `curated_exact` | — |

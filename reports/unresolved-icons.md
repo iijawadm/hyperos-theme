@@ -4,11 +4,13 @@ Icons listed below were **intentionally not guessed or blindly renamed** because
 
 To map any icon below in the future, add an entry to `scripts/hyperos_converter/mappings/android_to_linux.json` and re-run `./build.sh`.
 
-## Excluded Theme-Pack Helper Templates (3)
+## Excluded Theme-Pack Helper Templates (5)
 
 | File | Source | Reason |
 | --- | --- | --- |
 | `hyperos3-icons/com.miui.home.clear_bg.png` | `hyperos3-icons` | MIUI/HyperOS launcher background-clear widget overlay (not a standard Linux app) |
+| `hyperos3-icons/icon_folder.png` | `hyperos3-icons` | MIUI/HyperOS launcher home-screen folder backdrop squircle (not a Linux file manager folder icon; replaced by original HyperOS 3/4 vector folder) |
+| `hyperos3-icons/icon_folder_light.png` | `hyperos3-icons` | MIUI/HyperOS launcher home-screen folder backdrop squircle (not a Linux file manager folder icon; replaced by original HyperOS 3/4 vector folder) |
 | `hyperos3-icons/icon_mask.png` | `hyperos3-icons` | MIUI/HyperOS launcher adaptive icon mask template (not a Linux application icon) |
 | `hyperos3-icons/icon_pattern.png` | `hyperos3-icons` | MIUI/HyperOS launcher icon background pattern template (not a Linux application icon) |
 

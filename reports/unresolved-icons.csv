@@ -1,5 +1,7 @@
 stem,source_path,source_id,format,dimensions,status,reason
 com.miui.home.clear_bg,hyperos3-icons/com.miui.home.clear_bg.png,hyperos3-icons,PNG,256x256,excluded,MIUI/HyperOS launcher background-clear widget overlay (not a standard Linux app)
+icon_folder,hyperos3-icons/icon_folder.png,hyperos3-icons,PNG,256x256,excluded,MIUI/HyperOS launcher home-screen folder backdrop squircle (not a Linux file manager folder icon; replaced by original HyperOS 3/4 vector folder)
+icon_folder_light,hyperos3-icons/icon_folder_light.png,hyperos3-icons,PNG,256x256,excluded,MIUI/HyperOS launcher home-screen folder backdrop squircle (not a Linux file manager folder icon; replaced by original HyperOS 3/4 vector folder)
 icon_mask,hyperos3-icons/icon_mask.png,hyperos3-icons,PNG,256x256,excluded,MIUI/HyperOS launcher adaptive icon mask template (not a Linux application icon)
 icon_pattern,hyperos3-icons/icon_pattern.png,hyperos3-icons,PNG,256x256,excluded,MIUI/HyperOS launcher icon background pattern template (not a Linux application icon)
 android,hyperos3-icons/android.png,hyperos3-icons,PNG,256x256,unresolved,No verified Linux desktop equivalent or installed .desktop match found

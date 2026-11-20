@@ -4,7 +4,29 @@
   "exclude_helpers": {
     "icon_mask": "MIUI/HyperOS launcher adaptive icon mask template (not a Linux application icon)",
     "icon_pattern": "MIUI/HyperOS launcher icon background pattern template (not a Linux application icon)",
+    "icon_folder": "MIUI/HyperOS launcher home-screen folder backdrop squircle (not a Linux file manager folder icon; replaced by original HyperOS 3/4 vector folder)",
+    "icon_folder_light": "MIUI/HyperOS launcher home-screen folder backdrop squircle (not a Linux file manager folder icon; replaced by original HyperOS 3/4 vector folder)",
     "com.miui.home.clear_bg": "MIUI/HyperOS launcher background-clear widget overlay (not a standard Linux app)"
+  },
+  "original_aliases": {
+    "places/folder": ["inode-directory", "folder-blue", "folder-orange", "folder-yellow", "folder-saved-search", "stock_folder"],
+    "places/folder-open": ["folder_open", "document-open"],
+    "places/folder-home": ["user-home", "folder_home"],
+    "places/folder-desktop": ["user-desktop", "desktop"],
+    "places/folder-download": ["folder-downloads", "user-downloads"],
+    "places/folder-documents": ["folder-document"],
+    "places/folder-pictures": ["folder-images", "folder-photos"],
+    "places/folder-remote": ["network-workgroup", "network-server", "folder-network"],
+    "places/folder-bookmarks": ["user-bookmarks", "folder-favorites"],
+    "places/user-trash": ["trash-empty", "gnome-fs-trash-empty", "xfce-trash_empty"],
+    "places/user-trash-full": ["trash-full", "gnome-fs-trash-full", "xfce-trash_full"],
+    "mimes/text-x-generic": ["text-plain", "text-markdown", "application-x-zerosize"],
+    "mimes/application-pdf": ["x-office-document"],
+    "mimes/image-x-generic": ["image-png", "image-jpeg", "image-webp", "image-svg+xml"],
+    "mimes/audio-x-generic": ["audio-mpeg", "audio-flac", "audio-ogg"],
+    "mimes/video-x-generic": ["video-mp4", "video-x-matroska", "video-webm"],
+    "mimes/package-x-generic": ["application-zip", "application-x-tar", "application-x-compressed-tar", "application-gzip", "application-x-7z-compressed", "application-x-rar"],
+    "mimes/text-x-script": ["text-x-python", "application-x-shellscript", "application-json", "text-x-csrc", "text-x-chdr", "application-javascript"]
   },
   "apps": {
     "com.android.browser": {
@@ -188,16 +210,16 @@
       "aliases": ["multimedia-player", "org.gnome.Music"]
     },
     "com.android.providers.downloads": {
-      "icon": "folder-download",
-      "context": "places",
-      "app_name": "Downloads",
-      "aliases": ["folder-downloads", "user-downloads"]
+      "icon": "downloads-manager",
+      "context": "apps",
+      "app_name": "Downloads Manager",
+      "aliases": ["download-manager"]
     },
     "com.android.providers.downloads.ui": {
-      "icon": "folder-download",
-      "context": "places",
+      "icon": "downloads-manager",
+      "context": "apps",
       "app_name": "Downloads UI",
-      "aliases": ["folder-downloads"]
+      "aliases": []
     },
     "com.android.settings": {
       "icon": "preferences-system",
@@ -594,18 +616,6 @@
       "context": "apps",
       "app_name": "Bilibili",
       "aliases": ["io.github.msojocs.bilibili"]
-    },
-    "icon_folder": {
-      "icon": "folder",
-      "context": "places",
-      "app_name": "Folder",
-      "aliases": ["inode-directory", "folder-blue"]
-    },
-    "icon_folder_light": {
-      "icon": "folder-open",
-      "context": "places",
-      "app_name": "Folder (Light)",
-      "aliases": ["folder-light"]
     }
   },
   "status": {
