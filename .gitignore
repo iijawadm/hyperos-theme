@@ -1,0 +1,13 @@
+# Python bytecode & virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS & editor junk
+.DS_Store
+Thumbs.db
+*.swp
+
+# Generated icon cache (rebuilt on install/build)
+HyperOS-Icons/icon-theme.cache

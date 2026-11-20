@@ -1,0 +1,691 @@
+{
+  "version": "1.0.0",
+  "description": "Curated Android package name to Freedesktop Linux icon theme mapping table.",
+  "exclude_helpers": {
+    "icon_mask": "MIUI/HyperOS launcher adaptive icon mask template (not a Linux application icon)",
+    "icon_pattern": "MIUI/HyperOS launcher icon background pattern template (not a Linux application icon)",
+    "com.miui.home.clear_bg": "MIUI/HyperOS launcher background-clear widget overlay (not a standard Linux app)"
+  },
+  "apps": {
+    "com.android.browser": {
+      "icon": "web-browser",
+      "context": "apps",
+      "app_name": "Web Browser",
+      "aliases": ["internet-web-browser", "org.gnome.Epiphany"]
+    },
+    "com.mi.globalbrowser": {
+      "icon": "web-browser",
+      "context": "apps",
+      "app_name": "Mi Browser",
+      "aliases": ["internet-web-browser"]
+    },
+    "com.android.chrome": {
+      "icon": "google-chrome",
+      "context": "apps",
+      "app_name": "Google Chrome",
+      "aliases": ["com.google.Chrome", "chrome", "chromium-browser"]
+    },
+    "org.mozilla.firefox": {
+      "icon": "firefox",
+      "context": "apps",
+      "app_name": "Mozilla Firefox",
+      "aliases": ["org.mozilla.firefox", "firefox-esr"]
+    },
+    "com.brave.browser": {
+      "icon": "brave-browser",
+      "context": "apps",
+      "app_name": "Brave Browser",
+      "aliases": ["com.brave.Browser", "brave"]
+    },
+    "com.vivaldi.browser": {
+      "icon": "vivaldi",
+      "context": "apps",
+      "app_name": "Vivaldi",
+      "aliases": ["com.vivaldi.Vivaldi", "vivaldi-stable"]
+    },
+    "com.microsoft.emmx": {
+      "icon": "microsoft-edge",
+      "context": "apps",
+      "app_name": "Microsoft Edge",
+      "aliases": ["com.microsoft.Edge"]
+    },
+    "com.opera.browser": {
+      "icon": "opera",
+      "context": "apps",
+      "app_name": "Opera",
+      "aliases": ["opera-browser"]
+    },
+    "com.android.calculator2": {
+      "icon": "accessories-calculator",
+      "context": "apps",
+      "app_name": "Calculator",
+      "aliases": ["calculator", "org.gnome.Calculator", "kcalc", "xfce4-calculator", "galculator"]
+    },
+    "com.miui.calculator": {
+      "icon": "accessories-calculator",
+      "context": "apps",
+      "app_name": "Mi Calculator",
+      "aliases": ["calculator", "org.gnome.Calculator"]
+    },
+    "com.android.calendar": {
+      "icon": "x-office-calendar",
+      "context": "apps",
+      "app_name": "Calendar",
+      "aliases": ["office-calendar", "org.gnome.Calendar", "korganizer", "calendar"]
+    },
+    "com.xiaomi.calendar": {
+      "icon": "x-office-calendar",
+      "context": "apps",
+      "app_name": "Xiaomi Calendar",
+      "aliases": ["office-calendar", "org.gnome.Calendar"]
+    },
+    "com.google.android.calendar": {
+      "icon": "x-office-calendar",
+      "context": "apps",
+      "app_name": "Google Calendar",
+      "aliases": ["google-calendar"]
+    },
+    "com.android.camera": {
+      "icon": "camera-photo",
+      "context": "apps",
+      "app_name": "Camera",
+      "aliases": ["org.gnome.Snapshot", "cheese", "org.kde.kamoso", "camera"]
+    },
+    "com.mlab.cam": {
+      "icon": "camera-photo",
+      "context": "apps",
+      "app_name": "Camera",
+      "aliases": ["camera"]
+    },
+    "com.android.contacts": {
+      "icon": "x-office-address-book",
+      "context": "apps",
+      "app_name": "Contacts",
+      "aliases": ["office-address-book", "org.gnome.Contacts", "kaddressbook", "contacts"]
+    },
+    "com.android.providers.contacts": {
+      "icon": "x-office-address-book",
+      "context": "apps",
+      "app_name": "Contacts Provider",
+      "aliases": ["org.gnome.Contacts"]
+    },
+    "com.android.contacts.activities.TwelveKeyDialer": {
+      "icon": "call-start",
+      "context": "apps",
+      "app_name": "Phone Dialer",
+      "aliases": ["phone", "org.gnome.Calls"]
+    },
+    "com.android.providers.contacts.CallLogProvider": {
+      "icon": "call-start",
+      "context": "apps",
+      "app_name": "Call Log",
+      "aliases": ["phone"]
+    },
+    "com.android.deskclock": {
+      "icon": "org.gnome.clocks",
+      "context": "apps",
+      "app_name": "Clock",
+      "aliases": ["preferences-system-time", "clock", "alarm", "kclock", "xfce4-clock"]
+    },
+    "com.android.email": {
+      "icon": "mail-client",
+      "context": "apps",
+      "app_name": "Email",
+      "aliases": ["internet-mail", "org.gnome.Evolution", "org.mozilla.Thunderbird", "thunderbird", "geary", "kmail"]
+    },
+    "com.google.android.gm": {
+      "icon": "gmail",
+      "context": "apps",
+      "app_name": "Gmail",
+      "aliases": ["web-gmail"]
+    },
+    "com.android.fileexplorer": {
+      "icon": "system-file-manager",
+      "context": "apps",
+      "app_name": "File Manager",
+      "aliases": ["org.gnome.Nautilus", "nautilus", "dolphin", "thunar", "nemo", "caja", "pcmanfm", "org.kde.dolphin"]
+    },
+    "com.mi.android.globalFileexplorer": {
+      "icon": "system-file-manager",
+      "context": "apps",
+      "app_name": "Mi File Manager",
+      "aliases": ["org.gnome.Nautilus", "nautilus"]
+    },
+    "com.android.gallery3d": {
+      "icon": "image-viewer",
+      "context": "apps",
+      "app_name": "Gallery",
+      "aliases": ["org.gnome.Loupe", "org.gnome.Photos", "org.gnome.eog", "eog", "gwenview", "ristretto", "pix"]
+    },
+    "com.miui.gallery": {
+      "icon": "image-viewer",
+      "context": "apps",
+      "app_name": "MIUI Gallery",
+      "aliases": ["org.gnome.Loupe", "org.gnome.Photos"]
+    },
+    "com.android.mms": {
+      "icon": "internet-chat",
+      "context": "apps",
+      "app_name": "Messages",
+      "aliases": ["mail-message-new", "sm.puri.Chatty", "messages"]
+    },
+    "com.android.providers.telephony": {
+      "icon": "internet-chat",
+      "context": "apps",
+      "app_name": "Telephony / Messages",
+      "aliases": ["messages"]
+    },
+    "com.android.music": {
+      "icon": "multimedia-audio-player",
+      "context": "apps",
+      "app_name": "Music",
+      "aliases": ["multimedia-player", "org.gnome.Music", "rhythmbox", "org.gnome.Rhythmbox3", "elisa", "lollypop", "audacious"]
+    },
+    "com.miui.player": {
+      "icon": "multimedia-audio-player",
+      "context": "apps",
+      "app_name": "Mi Music",
+      "aliases": ["multimedia-player", "org.gnome.Music"]
+    },
+    "com.android.providers.downloads": {
+      "icon": "folder-download",
+      "context": "places",
+      "app_name": "Downloads",
+      "aliases": ["folder-downloads", "user-downloads"]
+    },
+    "com.android.providers.downloads.ui": {
+      "icon": "folder-download",
+      "context": "places",
+      "app_name": "Downloads UI",
+      "aliases": ["folder-downloads"]
+    },
+    "com.android.settings": {
+      "icon": "preferences-system",
+      "context": "apps",
+      "app_name": "Settings",
+      "aliases": ["org.gnome.Settings", "gnome-control-center", "systemsettings", "xfce4-settings-manager", "cinnamon-settings"]
+    },
+    "com.android.soundrecorder": {
+      "icon": "audio-input-microphone",
+      "context": "apps",
+      "app_name": "Sound Recorder",
+      "aliases": ["org.gnome.SoundRecorder", "gnome-sound-recorder", "krecorder"]
+    },
+    "com.android.thememanager": {
+      "icon": "preferences-desktop-theme",
+      "context": "apps",
+      "app_name": "Themes",
+      "aliases": ["org.gnome.tweaks", "gnome-tweaks", "preferences-desktop-wallpaper"]
+    },
+    "com.android.voicedialer": {
+      "icon": "audio-headset",
+      "context": "apps",
+      "app_name": "Voice Dialer",
+      "aliases": ["voice-dialer"]
+    },
+    "com.apple.android.music": {
+      "icon": "apple-music",
+      "context": "apps",
+      "app_name": "Apple Music",
+      "aliases": ["cider", "sh.cider.Cider"]
+    },
+    "com.deepseek.chat": {
+      "icon": "deepseek",
+      "context": "apps",
+      "app_name": "DeepSeek",
+      "aliases": ["deepseek-chat"]
+    },
+    "com.duokan.reader": {
+      "icon": "accessories-ebook-reader",
+      "context": "apps",
+      "app_name": "Duokan Reader",
+      "aliases": ["com.github.johnfactotum.Foliate", "calibre-ebook-viewer", "ebook-reader"]
+    },
+    "com.facebook.katana": {
+      "icon": "facebook",
+      "context": "apps",
+      "app_name": "Facebook",
+      "aliases": ["web-facebook"]
+    },
+    "com.facebook.orca": {
+      "icon": "facebook-messenger",
+      "context": "apps",
+      "app_name": "Messenger",
+      "aliases": ["messenger", "caprine"]
+    },
+    "com.google.android.youtube": {
+      "icon": "youtube",
+      "context": "apps",
+      "app_name": "YouTube",
+      "aliases": ["web-youtube", "freetube", "io.freetubeapp.FreeTube"]
+    },
+    "com.google.android.apps.youtube.music": {
+      "icon": "youtube-music",
+      "context": "apps",
+      "app_name": "YouTube Music",
+      "aliases": ["pear-desktop", "com.github.th_ch.youtube_music"]
+    },
+    "com.google.android.apps.maps": {
+      "icon": "google-maps",
+      "context": "apps",
+      "app_name": "Google Maps",
+      "aliases": ["org.gnome.Maps", "maps"]
+    },
+    "com.google.android.apps.docs": {
+      "icon": "google-drive",
+      "context": "apps",
+      "app_name": "Google Drive",
+      "aliases": ["web-google-drive"]
+    },
+    "com.discord": {
+      "icon": "discord",
+      "context": "apps",
+      "app_name": "Discord",
+      "aliases": ["com.discordapp.Discord", "vesktop", "dev.vencord.Vesktop"]
+    },
+    "com.instagram.android": {
+      "icon": "instagram",
+      "context": "apps",
+      "app_name": "Instagram",
+      "aliases": ["web-instagram"]
+    },
+    "com.mi.earphone": {
+      "icon": "audio-headphones",
+      "context": "devices",
+      "app_name": "Xiaomi Earbuds",
+      "aliases": ["headphones"]
+    },
+    "com.mi.health": {
+      "icon": "org.gnome.Health",
+      "context": "apps",
+      "app_name": "Mi Fitness / Health",
+      "aliases": ["health"]
+    },
+    "com.xiaomi.hm.health": {
+      "icon": "org.gnome.Health",
+      "context": "apps",
+      "app_name": "Zepp Life / Mi Fit",
+      "aliases": ["health"]
+    },
+    "com.miui.barcodescanner": {
+      "icon": "qr-scanner",
+      "context": "apps",
+      "app_name": "Scanner",
+      "aliases": ["com.belmoussaoui.Decoder", "scanner"]
+    },
+    "com.xiaomi.scanner": {
+      "icon": "qr-scanner",
+      "context": "apps",
+      "app_name": "Xiaomi Scanner",
+      "aliases": ["com.belmoussaoui.Decoder"]
+    },
+    "com.miui.bugreport": {
+      "icon": "tools-report-bug",
+      "context": "apps",
+      "app_name": "Bug Report",
+      "aliases": ["bug-buddy", "abrt"]
+    },
+    "com.miui.compass": {
+      "icon": "compass",
+      "context": "apps",
+      "app_name": "Compass",
+      "aliases": ["marble"]
+    },
+    "com.miui.fm": {
+      "icon": "radio",
+      "context": "apps",
+      "app_name": "FM Radio",
+      "aliases": ["de.haeckerfelix.Shortwave", "goodvibes"]
+    },
+    "com.miui.fmradio": {
+      "icon": "radio",
+      "context": "apps",
+      "app_name": "FM Radio",
+      "aliases": ["de.haeckerfelix.Shortwave"]
+    },
+    "com.miui.fmservice": {
+      "icon": "radio",
+      "context": "apps",
+      "app_name": "FM Radio Service",
+      "aliases": []
+    },
+    "com.miui.notes": {
+      "icon": "accessories-text-editor",
+      "context": "apps",
+      "app_name": "Notes",
+      "aliases": ["notes", "org.gnome.TextEditor", "org.gnome.Notes", "bijiben", "knotes", "xfce4-notes"]
+    },
+    "com.miui.screenrecorder": {
+      "icon": "media-record",
+      "context": "apps",
+      "app_name": "Screen Recorder",
+      "aliases": ["io.github.seadve.Kooha", "simplescreenrecorder", "vokoscreenNG"]
+    },
+    "com.miui.securitycenter": {
+      "icon": "security-high",
+      "context": "apps",
+      "app_name": "Security Center",
+      "aliases": ["preferences-system-privacy", "gufw", "firewall-config"]
+    },
+    "com.miui.securitycenter.Main": {
+      "icon": "security-high",
+      "context": "apps",
+      "app_name": "Security Center",
+      "aliases": []
+    },
+    "com.miui.securitycenter.MainActivity": {
+      "icon": "security-high",
+      "context": "apps",
+      "app_name": "Security Center",
+      "aliases": []
+    },
+    "com.miui.supermarket": {
+      "icon": "system-software-install",
+      "context": "apps",
+      "app_name": "App Store",
+      "aliases": ["org.gnome.Software", "plasmadiscover", "io.elementary.appcenter", "pamac-manager"]
+    },
+    "com.xiaomi.market": {
+      "icon": "system-software-install",
+      "context": "apps",
+      "app_name": "Xiaomi GetApps",
+      "aliases": ["org.gnome.Software"]
+    },
+    "com.miui.video": {
+      "icon": "multimedia-video-player",
+      "context": "apps",
+      "app_name": "Video Player",
+      "aliases": ["video-display", "org.gnome.Totem", "org.gnome.Showtime", "io.github.celluloid_player.Celluloid", "dragonplayer"]
+    },
+    "com.miui.videoplayer": {
+      "icon": "multimedia-video-player",
+      "context": "apps",
+      "app_name": "MIUI Video Player",
+      "aliases": ["video-display", "org.gnome.Totem"]
+    },
+    "com.miui.weather2": {
+      "icon": "org.gnome.Weather",
+      "context": "apps",
+      "app_name": "Weather",
+      "aliases": ["weather-clear", "weather-few-clouds", "kweather"]
+    },
+    "com.mxtech.videoplayer.ad": {
+      "icon": "mx-player",
+      "context": "apps",
+      "app_name": "MX Player",
+      "aliases": ["mxplayer"]
+    },
+    "com.netease.cloudmusic": {
+      "icon": "netease-cloud-music",
+      "context": "apps",
+      "app_name": "NetEase Cloud Music",
+      "aliases": ["yesplaymusic"]
+    },
+    "com.shazam.android": {
+      "icon": "shazam",
+      "context": "apps",
+      "app_name": "Shazam",
+      "aliases": ["io.github.seadve.Mousai", "mousai"]
+    },
+    "com.soundcloud.android": {
+      "icon": "soundcloud",
+      "context": "apps",
+      "app_name": "SoundCloud",
+      "aliases": ["web-soundcloud"]
+    },
+    "com.spotify.music": {
+      "icon": "spotify",
+      "context": "apps",
+      "app_name": "Spotify",
+      "aliases": ["spotify-client", "com.spotify.Client"]
+    },
+    "com.ss.android.lark": {
+      "icon": "lark",
+      "context": "apps",
+      "app_name": "Lark / Feishu",
+      "aliases": ["feishu", "bytedance-feishu"]
+    },
+    "com.ss.android.ugc.aweme": {
+      "icon": "tiktok",
+      "context": "apps",
+      "app_name": "Douyin / TikTok",
+      "aliases": ["douyin"]
+    },
+    "com.ss.android.ugc.aweme.lite": {
+      "icon": "tiktok",
+      "context": "apps",
+      "app_name": "Douyin Lite",
+      "aliases": ["douyin-lite"]
+    },
+    "com.tencent.androidqqmail": {
+      "icon": "qqmail",
+      "context": "apps",
+      "app_name": "QQ Mail",
+      "aliases": []
+    },
+    "com.tencent.mm": {
+      "icon": "wechat",
+      "context": "apps",
+      "app_name": "WeChat",
+      "aliases": ["com.tencent.WeChat", "electronic-wechat", "wechat-uos"]
+    },
+    "com.tencent.mobileqq": {
+      "icon": "qq",
+      "context": "apps",
+      "app_name": "QQ",
+      "aliases": ["com.qq.QQ", "linuxqq"]
+    },
+    "com.tencent.qq": {
+      "icon": "qq",
+      "context": "apps",
+      "app_name": "QQ",
+      "aliases": ["com.qq.QQ"]
+    },
+    "com.tencent.qqmusic": {
+      "icon": "qqmusic",
+      "context": "apps",
+      "app_name": "QQ Music",
+      "aliases": ["com.qq.QQmusic"]
+    },
+    "com.tencent.tim": {
+      "icon": "tim",
+      "context": "apps",
+      "app_name": "Tencent TIM",
+      "aliases": []
+    },
+    "com.twitter.android": {
+      "icon": "twitter",
+      "context": "apps",
+      "app_name": "X / Twitter",
+      "aliases": ["x-twitter", "web-twitter"]
+    },
+    "com.whatsapp": {
+      "icon": "whatsapp",
+      "context": "apps",
+      "app_name": "WhatsApp",
+      "aliases": ["whatsapp-for-linux", "com.github.eneshecan.WhatsAppForLinux", "io.github.mimbrero.WhatsAppDesktop"]
+    },
+    "com.xiaomi.gamecenter": {
+      "icon": "applications-games",
+      "context": "apps",
+      "app_name": "Game Center",
+      "aliases": ["input-gaming"]
+    },
+    "com.xiaomi.gamecenter.pad": {
+      "icon": "applications-games",
+      "context": "apps",
+      "app_name": "Game Center Pad",
+      "aliases": []
+    },
+    "com.xiaomi.smarthome": {
+      "icon": "home-assistant",
+      "context": "apps",
+      "app_name": "Mi Home",
+      "aliases": ["smart-home"]
+    },
+    "org.telegram.messenger": {
+      "icon": "telegram",
+      "context": "apps",
+      "app_name": "Telegram",
+      "aliases": ["org.telegram.desktop", "telegram-desktop", "telegram-panel"]
+    },
+    "org.thoughtcrime.securesms": {
+      "icon": "signal-desktop",
+      "context": "apps",
+      "app_name": "Signal",
+      "aliases": ["org.signal.Signal", "signal"]
+    },
+    "org.videolan.vlc": {
+      "icon": "vlc",
+      "context": "apps",
+      "app_name": "VLC Media Player",
+      "aliases": ["org.videolan.VLC"]
+    },
+    "com.valvesoftware.android.steam.community": {
+      "icon": "steam",
+      "context": "apps",
+      "app_name": "Steam",
+      "aliases": ["com.valvesoftware.Steam", "steam-launcher"]
+    },
+    "com.github.android": {
+      "icon": "github-desktop",
+      "context": "apps",
+      "app_name": "GitHub",
+      "aliases": ["io.github.shiftey.Desktop", "github"]
+    },
+    "md.obsidian": {
+      "icon": "obsidian",
+      "context": "apps",
+      "app_name": "Obsidian",
+      "aliases": ["md.obsidian.Obsidian"]
+    },
+    "notion.id": {
+      "icon": "notion",
+      "context": "apps",
+      "app_name": "Notion",
+      "aliases": ["notion-app"]
+    },
+    "com.x8bit.bitwarden": {
+      "icon": "bitwarden",
+      "context": "apps",
+      "app_name": "Bitwarden",
+      "aliases": ["com.bitwarden.desktop"]
+    },
+    "com.reddit.frontpage": {
+      "icon": "reddit",
+      "context": "apps",
+      "app_name": "Reddit",
+      "aliases": ["web-reddit"]
+    },
+    "com.slack": {
+      "icon": "slack",
+      "context": "apps",
+      "app_name": "Slack",
+      "aliases": ["com.slack.Slack"]
+    },
+    "us.zoom.videomeetings": {
+      "icon": "zoom",
+      "context": "apps",
+      "app_name": "Zoom",
+      "aliases": ["us.zoom.Zoom", "Zoom"]
+    },
+    "tv.danmaku.bili": {
+      "icon": "bilibili",
+      "context": "apps",
+      "app_name": "Bilibili",
+      "aliases": ["io.github.msojocs.bilibili"]
+    },
+    "icon_folder": {
+      "icon": "folder",
+      "context": "places",
+      "app_name": "Folder",
+      "aliases": ["inode-directory", "folder-blue"]
+    },
+    "icon_folder_light": {
+      "icon": "folder-open",
+      "context": "places",
+      "app_name": "Folder (Light)",
+      "aliases": ["folder-light"]
+    }
+  },
+  "status": {
+    "status_bar_toggle_flight_mode_on": {
+      "icon": "airplane-mode-on",
+      "context": "status",
+      "app_name": "Airplane Mode On",
+      "aliases": ["airplane-mode"]
+    },
+    "status_bar_toggle_flight_mode_off": {
+      "icon": "airplane-mode-off",
+      "context": "status",
+      "app_name": "Airplane Mode Off",
+      "aliases": []
+    },
+    "status_bar_toggle_wifi_on": {
+      "icon": "network-wireless-on",
+      "context": "status",
+      "app_name": "Wi-Fi On",
+      "aliases": ["network-wireless-signal-excellent", "network-wireless"]
+    },
+    "status_bar_toggle_wifi_off": {
+      "icon": "network-wireless-off",
+      "context": "status",
+      "app_name": "Wi-Fi Off",
+      "aliases": ["network-wireless-offline", "network-wireless-disabled"]
+    },
+    "status_bar_toggle_wifi_ap_on": {
+      "icon": "network-wireless-hotspot",
+      "context": "status",
+      "app_name": "Wi-Fi Hotspot On",
+      "aliases": []
+    },
+    "status_bar_toggle_wifi_ap_off": {
+      "icon": "network-wireless-hotspot-disabled",
+      "context": "status",
+      "app_name": "Wi-Fi Hotspot Off",
+      "aliases": []
+    },
+    "status_bar_toggle_data_on": {
+      "icon": "network-cellular-on",
+      "context": "status",
+      "app_name": "Mobile Data On",
+      "aliases": ["network-cellular-connected", "network-cellular-signal-excellent"]
+    },
+    "status_bar_toggle_data_off": {
+      "icon": "network-cellular-off",
+      "context": "status",
+      "app_name": "Mobile Data Off",
+      "aliases": ["network-cellular-offline", "network-cellular-disabled"]
+    },
+    "status_bar_toggle_bluetooth_on": {
+      "icon": "bluetooth-active",
+      "context": "status",
+      "app_name": "Bluetooth Active",
+      "aliases": ["bluetooth"]
+    },
+    "status_bar_toggle_bluetooth_off": {
+      "icon": "bluetooth-disabled",
+      "context": "status",
+      "app_name": "Bluetooth Disabled",
+      "aliases": ["bluetooth-offline"]
+    },
+    "status_bar_toggle_torch_on": {
+      "icon": "flashlight-on",
+      "context": "status",
+      "app_name": "Flashlight On",
+      "aliases": []
+    },
+    "status_bar_toggle_torch_off": {
+      "icon": "flashlight-off",
+      "context": "status",
+      "app_name": "Flashlight Off",
+      "aliases": []
+    },
+    "status_bar_toggle_lock": {
+      "icon": "changes-prevent",
+      "context": "status",
+      "app_name": "Screen Lock",
+      "aliases": ["system-lock-screen"]
+    }
+  }
+}
